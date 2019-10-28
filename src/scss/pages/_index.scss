@@ -1,0 +1,18 @@
+
+/*
+* Var
+*/
+$black_soft: #333333;
+$black: #212121;
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    background: $black_soft;
+    height: 100px;
+}
+
+.slider {
+    height: calc(100vh - 100px);
+    background: $black;
+}
