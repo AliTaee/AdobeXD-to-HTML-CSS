@@ -8,18 +8,50 @@
 ?>
 <!DOCTYPE html>
 <html lang="<?=$config->lang?>" class="<?=$config->dir?>">
-	<head>
-		<?php
+
+<head>
+	<?php
 			include 'common/favicon.php';
 			include 'common/meta.php';
 			include 'common/head.php';
 		 ?>
-	</head>
-	<body>
-		<div class="page page-home">
-			<h1>صفحه خانه</h1>
-		</div>
+</head>
 
-		<?php include 'common/js.php'; ?>
-	</body>
+<body>
+	<div class="intro">
+		<header class="menu">
+			<div class="menu__contact">
+				<p class="menu__tel">تلفن سفارشات</p>
+				<a href="tel:+9821750440" class="menu__tel-number"><span class="menu__area-number">۰۲۱</span>۷۵۰ ۴۴۰</a>
+			</div>
+			<nav class="menu__nav">
+				<ul class="menu__list">
+					<li class="menu__item"><a href="#" class="menu__link">خانه</a></li>
+					<li class="menu__item">
+						<p class="menu__sub">محصولات</p>
+					</li>
+					<li class="menu__item"><a href="#" class="menu__link">درباره </a></li>
+					<li class="menu__item"><a href="#" class="menu__link">تماس</a></li>
+				</ul>
+			</nav>
+			<a href="#" class="menu__logo">
+				<img src="../src/images/site-logo.png" alt="site logo" class="menu__img-logo">
+				<div class="menu__text-wrapper">
+					<h1 class="menu__site-title">
+						رستوران ایکس
+					</h1>
+					<p class="menu__site-desc">طعم‌های ناشناخته</p>
+				</div>
+			</a>
+		</header>
+		<section class="slider">
+			<div class="slider__wrapper">
+
+			</div>
+		</section>
+	</div>
+
+	<?php include 'common/js.php'; ?>
+</body>
+
 </html>
