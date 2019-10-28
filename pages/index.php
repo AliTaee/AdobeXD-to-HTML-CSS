@@ -22,23 +22,6 @@
 		<header class="menu">
 			<div class="menu__wrapper">
 
-				<div class="menu__contact">
-					<p class="menu__tel">تلفن سفارشات</p>
-					<a href="tel:+9821750440" class="menu__tel-number"><span class="menu__area-number">۰۲۱</span>۷۵۰
-						۴۴۰</a>
-				</div>
-
-				<nav class="menu__nav">
-					<ul class="menu__list">
-						<li class="menu__item"><a href="#" class="menu__link">خانه</a></li>
-						<li class="menu__item">
-							<p class="menu__sub">محصولات</p>
-						</li>
-						<li class="menu__item"><a href="#" class="menu__link">درباره </a></li>
-						<li class="menu__item"><a href="#" class="menu__link">تماس</a></li>
-					</ul>
-				</nav>
-
 				<a href="#" class="menu__logo">
 					<img src="../src/images/site-logo.png" alt="site logo" class="menu__img-logo">
 					<div class="menu__text-wrapper">
@@ -49,29 +32,40 @@
 					</div>
 				</a>
 
+				<nav class="menu__nav">
+					<ul class="menu__list">
+						<li class="menu__item"><a href="#" class="menu__link">خانه</a></li>
+						<li class="menu__item">
+							<p class="menu__sub menu__link">محصولات</p>
+						</li>
+						<li class="menu__item"><a href="#" class="menu__link">درباره </a></li>
+						<li class="menu__item"><a href="#" class="menu__link">تماس</a></li>
+					</ul>
+				</nav>
+
+				<div class="menu__contact">
+					<p class="menu__tel">تلفن سفارشات</p>
+					<a href="tel:+9821750440" class="menu__tel-number"><span class="menu__area-number">۰۲۱</span>۷۵۰
+						۴۴۰</a>
+				</div>
+
 			</div>
 		</header>
 		<section class="slider">
 			<div class="slider__wrapper">
-				<div class="slider__item" style="back">
-					<img src="" alt="slider image" class="slider__img">
-					<h2 class="slider__title"></h2>
-					<p class="slider__desc"></p>
+				<div class="slider__item" style="background-image: url('../src/images/img1.png')">
+					<h2 class="slider__title">طعم‌های ناشناخته را با ما تجربه کنید</h2>
+					<p class="slider__desc">۱۵ سال همراه‌تان بوده‌ایم</p>
 				</div>
-				<div class="slider__item">
-					<img src="" alt="slider image" class="slider__img">
-					<h2 class="slider__title"></h2>
-					<p class="slider__desc"></p>
+				<div class="slider__item" style="background-image: url('../src/images/img2.jpg')">
+					<h2 class="slider__title">طعم‌های ناشناخته را با ما تجربه کنید</h2>
+					<p class="slider__desc">۱۵ سال همراه‌تان بوده‌ایم</p>
 				</div>
-				<div class="slider__item">
-					<img src="" alt="slider image" class="slider__img">
-					<h2 class="slider__title"></h2>
-					<p class="slider__desc"></p>
+				<div class="slider__item" style="background-image: url('../src/images/img1.png')">
+					<h2 class="slider__title">طعم‌های ناشناخته را با ما تجربه کنید</h2>
+					<p class="slider__desc">۱۵ سال همراه‌تان بوده‌ایم</p>
 				</div>
 				<div class="slider__nav">
-					<span class="slider__bullet"></span>
-					<span class="slider__bullet"></span>
-					<span class="slider__bullet"></span>
 				</div>
 			</div>
 		</section>
