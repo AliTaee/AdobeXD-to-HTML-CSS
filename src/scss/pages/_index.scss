@@ -1,18 +1,12 @@
-
 /*
 * Var
 */
 $black_soft: #333333;
 $black: #212121;
+$white: #fff;
 
-.menu {
-    display: flex;
-    flex-direction: row;
-    background: $black_soft;
-    height: 100px;
-}
+$main-font-size: 16px;
+$medium-font-size: $main-font-size + 2;
 
-.slider {
-    height: calc(100vh - 100px);
-    background: $black;
-}
+@import './index/menu';
+@import './index/slider';

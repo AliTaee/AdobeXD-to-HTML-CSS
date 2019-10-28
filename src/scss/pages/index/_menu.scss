@@ -1,0 +1,52 @@
+
+.menu {
+
+    background: $black_soft;
+
+    &__wrapper {
+        width: 1440px;
+        height: 100px;
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        align-items: center;
+        margin: 0 auto;
+        color: $white;
+
+        a {
+            color: $white;
+        }
+    }
+
+    &__nav {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    &__contact {
+        margin-right: auto;   
+    }
+
+    &__tel {
+        font-size: $main-font-size;
+    }
+
+    &__tel-number {
+        font-size: $medium-font-size;
+        font-weight: 500;
+    }
+
+    &__area-number {
+        font-size: $main-font-size;
+        font-weight: normal;
+        margin: 6px 7px 0 0;
+    }
+}
+
