@@ -49,12 +49,17 @@
 
     &__sub-menu {
         width: 150px;
-        visibility: hidden;
         opacity: 0;
+        visibility: hidden;
         position: absolute;
         background: #212121;
         border-radius: 5px;
         top: 35px;
+
+        &--active {
+            opacity: 1;
+            visibility: visible;
+        }
     }
 
     &__sub-link {
@@ -70,6 +75,12 @@
         &--down {
             transform: rotate(45deg);
             -webkit-transform: rotate(45deg);
+        }
+
+        &--active {
+            transform : rotate(-135deg);
+            -webkit-transform: rotate(-135deg);
+            transition: 0.5s;
         }
     }
 
