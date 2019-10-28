@@ -2,6 +2,7 @@
 .menu {
 
     background: $black_soft;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15%);
 
     &__wrapper {
         width: 1440px;
@@ -53,7 +54,13 @@
         position: absolute;
         background: #212121;
         border-radius: 5px;
-        top: 30px;
+        top: 35px;
+    }
+
+    &__sub-link {
+        padding: 5px;
+        font-size: $main-font-size;
+        display: block;
     }
 
     &__arrow {
@@ -82,7 +89,7 @@
     &__tel-number {
         font-size: $medium-font-size;
         font-weight: 500;
-        padding: $area_link;
+        padding: 0 5px 5px 0;
         display: flex;
         flex-direction: row-reverse;
     }
