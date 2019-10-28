@@ -59,15 +59,15 @@
 		</header>
 		<section class="slider">
 			<div class="slider__wrapper">
-				<div class="slider__item" style="background-image: url('../src/images/img1.png')">
+				<div class="slider__item" style="background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.201))), url('../src/images/img1.png')">
 					<h2 class="slider__title">طعم‌های ناشناخته را با ما تجربه کنید</h2>
 					<p class="slider__desc">۱۵ سال همراه‌تان بوده‌ایم</p>
 				</div>
-				<div class="slider__item" style="background-image: url('../src/images/img2.jpg')">
+				<div class="slider__item" style="background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.201))), url('../src/images/img2.jpg')">
 					<h2 class="slider__title">طعم‌های ناشناخته را با ما تجربه کنید</h2>
 					<p class="slider__desc">۱۵ سال همراه‌تان بوده‌ایم</p>
 				</div>
-				<div class="slider__item" style="background-image: url('../src/images/img1.png')">
+				<div class="slider__item" style="background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.201))), url('../src/images/img3.jpg')">
 					<h2 class="slider__title">طعم‌های ناشناخته را با ما تجربه کنید</h2>
 					<p class="slider__desc">۱۵ سال همراه‌تان بوده‌ایم</p>
 				</div>
