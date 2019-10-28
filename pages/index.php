@@ -36,7 +36,7 @@
 					<ul class="menu__list">
 						<li class="menu__item"><a href="#" class="menu__link">خانه</a></li>
 						<li class="menu__item">
-							<p class="menu__sub menu__link">محصولات</p>
+							<p class="menu__sub menu__link">محصولات<span class="menu__arrow menu__arrow--down"></span></p>
 						</li>
 						<li class="menu__item"><a href="#" class="menu__link">درباره </a></li>
 						<li class="menu__item"><a href="#" class="menu__link">تماس</a></li>
