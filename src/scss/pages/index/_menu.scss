@@ -3,6 +3,8 @@
 
     background: $black_soft;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15%);
+    position: relative;
+    z-index: 2;
 
     &__wrapper {
         width: 1440px;
