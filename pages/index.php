@@ -46,7 +46,26 @@
 		</header>
 		<section class="slider">
 			<div class="slider__wrapper">
-
+				<div class="slider__item">
+					<img src="" alt="slider image" class="slider__img">
+					<h2 class="slider__title"></h2>
+					<p class="slider__desc"></p>
+				</div>
+				<div class="slider__item">
+					<img src="" alt="slider image" class="slider__img">
+					<h2 class="slider__title"></h2>
+					<p class="slider__desc"></p>
+				</div>
+				<div class="slider__item">
+					<img src="" alt="slider image" class="slider__img">
+					<h2 class="slider__title"></h2>
+					<p class="slider__desc"></p>
+				</div>
+				<div class="slider__nav">
+					<span class="slider__bullet"></span>
+					<span class="slider__bullet"></span>
+					<span class="slider__bullet"></span>
+				</div>
 			</div>
 		</section>
 	</div>
