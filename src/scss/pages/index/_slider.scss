@@ -19,11 +19,9 @@
         justify-content: center;
         height: 100%;
         width: 100%;
-        transition: 0.6s ease;
-        transform: translate(-100%, 0);
         
         &--active {
-            transform: translate(0, 0);
+            z-index: 3;
         }
     }
 

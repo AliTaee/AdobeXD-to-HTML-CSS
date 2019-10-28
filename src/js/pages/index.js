@@ -1,6 +1,6 @@
 import $ from 'jquery';
 
-const TIME = 3000;
+const TIME = 6000;
 let index = 1;
 
 $(document).ready(function () {
@@ -18,20 +18,20 @@ $(document).ready(function () {
         $(".menu__arrow").removeClass("menu__arrow--active");
     });
 
-    function sliderFunc(){
+    function sliderFunc() {
         let slider = $(".slider__item");
-        
+
         if (index >= slider.length) {
-            $(slider[index - 1]).removeClass("slider__item--active");
+            $(slider[index - 1]).removeClass("slider__item--active").fadeOut(1000);
             index = 0;
-            $(slider[index]).addClass("slider__item--active");
+            $(slider[index]).addClass("slider__item--active").fadeIn(1000);
         } else {
-            $(slider[index - 1]).removeClass("slider__item--active");
-            $(slider[index]).addClass("slider__item--active");
+            $(slider[index - 1]).removeClass("slider__item--active").fadeOut(1000);
+            $(slider[index]).addClass("slider__item--active").fadeIn(1000);
             index++;
         }
-        
-        setTimeout(sliderFunc, TIME); 
+
+        setTimeout(sliderFunc, TIME);
     }
 
     window.onload = sliderFunc;
