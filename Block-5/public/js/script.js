@@ -11621,14 +11621,16 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         var index = this.index;
         this.bulletGenerate();
         setInterval(function sliderFunc() {
-          if (index >= sliderItems.length) {
-            (0, _jquery["default"])(sliderItems[index - 1]).removeClass("slider__item--active").fadeOut(1000);
-            index = 0;
-            (0, _jquery["default"])(sliderItems[index]).addClass("slider__item--active").fadeIn(1000);
-          } else {
-            (0, _jquery["default"])(sliderItems[index - 1]).removeClass("slider__item--active").fadeOut(1000);
-            (0, _jquery["default"])(sliderItems[index]).addClass("slider__item--active").fadeIn(1000);
+          console.log(index);
+
+          if (index < sliderItems.length) {
+            (0, _jquery["default"])(sliderItems[index]).addClass("slider__item--active");
+            (0, _jquery["default"])(sliderItems[index - 1]).removeClass("slider__item--active");
             index++;
+          } else {
+            (0, _jquery["default"])(sliderItems[0]).addClass("slider__item--active");
+            (0, _jquery["default"])(sliderItems[index - 1]).removeClass("slider__item--active");
+            index = 1;
           }
         }, this.time);
       }

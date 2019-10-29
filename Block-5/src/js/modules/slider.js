@@ -18,18 +18,19 @@ $(document).ready(function () {
 			this.bulletGenerate();
 
 			setInterval((function sliderFunc() {
-
-				if (index >= sliderItems.length) {
-					$(sliderItems[index - 1]).removeClass("slider__item--active").fadeOut(1000);
-					index = 0;
-					$(sliderItems[index]).addClass("slider__item--active").fadeIn(1000);
-				} else {
-					$(sliderItems[index - 1]).removeClass("slider__item--active").fadeOut(1000);
-					$(sliderItems[index]).addClass("slider__item--active").fadeIn(1000);
+				console.log(index);
+				if (index < sliderItems.length) {
+					$(sliderItems[index]).addClass("slider__item--active");
+					$(sliderItems[index - 1]).removeClass("slider__item--active");
 					index++;
+				} else {
+					$(sliderItems[0]).addClass("slider__item--active");
+					$(sliderItems[index - 1]).removeClass("slider__item--active");
+					index = 1;
 				}
 
 			}), this.time);
+
 		};
 
 		bulletGenerate() {
