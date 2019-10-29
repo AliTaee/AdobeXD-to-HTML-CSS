@@ -1504,5 +1504,21 @@ body {
     font-size: 28px;
     color: #fff;
     color: rgba(255, 255, 255, 0.6); }
+  .slider__nav {
+    position: absolute;
+    bottom: 0; }
+  .slider__bullet {
+    width: 14px;
+    height: 14px;
+    background: #fff;
+    background: rgba(255, 255, 255, 0.401);
+    border-radius: 50%;
+    display: block;
+    cursor: pointer; }
+    .slider__bullet--active {
+      width: 18px;
+      height: 18px;
+      background: #fff;
+      box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.161); }
 
 /*# sourceMappingURL=main.css.map */

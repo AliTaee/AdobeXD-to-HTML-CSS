@@ -11587,34 +11587,78 @@ require("./slider");
 },{}],54:[function(require,module,exports){
 "use strict";
 
+require("core-js/modules/es.object.define-property");
+
 require("core-js/modules/web.timers");
 
 var _jquery = _interopRequireDefault(require("jquery"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-(0, _jquery["default"])(document).ready(function () {
-  var slider = function slider() {
-    var time = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 6000;
-    var sliderItems = (0, _jquery["default"])(".slider__item");
-    var index = 1;
-    setInterval(function sliderFunc() {
-      if (index >= sliderItems.length) {
-        (0, _jquery["default"])(sliderItems[index - 1]).removeClass("slider__item--active").fadeOut(1000);
-        index = 0;
-        (0, _jquery["default"])(sliderItems[index]).addClass("slider__item--active").fadeIn(1000);
-      } else {
-        (0, _jquery["default"])(sliderItems[index - 1]).removeClass("slider__item--active").fadeOut(1000);
-        (0, _jquery["default"])(sliderItems[index]).addClass("slider__item--active").fadeIn(1000);
-        index++;
-      }
-    }, time);
-  };
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-  window.onload = slider(6000);
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+(0, _jquery["default"])(document).ready(function () {
+  var slider =
+  /*#__PURE__*/
+  function () {
+    function slider(time, sliderContainer, bulletContainer) {
+      _classCallCheck(this, slider);
+
+      this.time = time;
+      this.sliderContainer = sliderContainer;
+      this.bulletContainer = bulletContainer;
+      this.index = 1;
+    }
+
+    _createClass(slider, [{
+      key: "slide",
+      value: function slide() {
+        var sliderItems = (0, _jquery["default"])(this.sliderContainer);
+        var index = this.index;
+        this.bulletGenerate();
+        setInterval(function sliderFunc() {
+          if (index >= sliderItems.length) {
+            (0, _jquery["default"])(sliderItems[index - 1]).removeClass("slider__item--active").fadeOut(1000);
+            index = 0;
+            (0, _jquery["default"])(sliderItems[index]).addClass("slider__item--active").fadeIn(1000);
+          } else {
+            (0, _jquery["default"])(sliderItems[index - 1]).removeClass("slider__item--active").fadeOut(1000);
+            (0, _jquery["default"])(sliderItems[index]).addClass("slider__item--active").fadeIn(1000);
+            index++;
+          }
+        }, this.time);
+      }
+    }, {
+      key: "bulletGenerate",
+      value: function bulletGenerate() {
+        var bulletContainer = (0, _jquery["default"])(this.bulletContainer);
+        var bulletNumber = (0, _jquery["default"])(this.sliderContainer).length;
+
+        for (var index = 1; index <= bulletNumber; index++) {
+          if (index === 1) {
+            (0, _jquery["default"])(bulletContainer).prepend("<span class='slider__bullet slider__bullet--active'></span>");
+          } else {
+            (0, _jquery["default"])(bulletContainer).prepend("<span class='slider__bullet'></span>");
+          }
+        }
+      }
+    }]);
+
+    return slider;
+  }();
+
+  ; // Time - slider wrapper - bullet wrapper
+
+  var headerSlider = new slider(3000, ".slider__item", ".slider__nav"); // Start when page is load
+
+  window.onload = headerSlider.slide();
 });
 
-},{"core-js/modules/web.timers":45,"jquery":46}],55:[function(require,module,exports){
+},{"core-js/modules/es.object.define-property":44,"core-js/modules/web.timers":45,"jquery":46}],55:[function(require,module,exports){
 arguments[4][53][0].apply(exports,arguments)
 },{"dup":53}]},{},[51])
 
