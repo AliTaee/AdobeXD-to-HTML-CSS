@@ -11574,12 +11574,14 @@ require("./common/");
 
 require("./pages/");
 
-},{"./common/":49,"./helpers/":50,"./modules/":52,"./pages/":54,"svgxuse":47}],52:[function(require,module,exports){
+},{"./common/":49,"./helpers/":50,"./modules/":52,"./pages/":55,"svgxuse":47}],52:[function(require,module,exports){
 "use strict";
 
 require("./modal");
 
-},{"./modal":53}],53:[function(require,module,exports){
+require("./slider");
+
+},{"./modal":53,"./slider":54}],53:[function(require,module,exports){
 "use strict";
 
 },{}],54:[function(require,module,exports){
@@ -11591,23 +11593,10 @@ var _jquery = _interopRequireDefault(require("jquery"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-var TIME = 6000;
-var index = 1;
 (0, _jquery["default"])(document).ready(function () {
-  // Hover sub menu
-  (0, _jquery["default"])(".menu__sub, .menu__sub-menu").hover(function () {
-    // Disable menu
-    (0, _jquery["default"])(".menu__sub-menu").addClass("menu__sub-menu--active"); // Animation
-
-    (0, _jquery["default"])(".menu__arrow").addClass("menu__arrow--active");
-  }, function () {
-    // Hide menu
-    (0, _jquery["default"])(".menu__sub-menu").removeClass("menu__sub-menu--active"); // Animation
-
-    (0, _jquery["default"])(".menu__arrow").removeClass("menu__arrow--active");
-  });
-
-  function sliderFunc() {
+  var sliderFunc = function sliderFunc() {
+    var index = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 1;
+    var time = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 6000;
     var slider = (0, _jquery["default"])(".slider__item");
 
     if (index >= slider.length) {
@@ -11620,12 +11609,14 @@ var index = 1;
       index++;
     }
 
-    setTimeout(sliderFunc, TIME);
-  }
+    setTimeout(sliderFunc, time);
+  };
 
   window.onload = sliderFunc;
 });
 
-},{"core-js/modules/web.timers":45,"jquery":46}]},{},[51])
+},{"core-js/modules/web.timers":45,"jquery":46}],55:[function(require,module,exports){
+arguments[4][53][0].apply(exports,arguments)
+},{"dup":53}]},{},[51])
 
 //# sourceMappingURL=script.js.map

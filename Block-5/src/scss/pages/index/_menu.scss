@@ -1,5 +1,5 @@
 .menu {
-	
+
 	background: $black_soft;
 	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15%);
 	position: relative;
@@ -47,9 +47,22 @@
 	&__sub {
 		padding-top: 0;
 		cursor: pointer;
+		position: relative;
+
+		&:hover .menu__sub-menu {
+			opacity: 1;
+			visibility: visible;
+		}
+
+		&:hover .menu__arrow {
+			transform: rotate(-135deg);
+			-webkit-transform: rotate(-135deg);
+			transition: 0.5s;
+		}
 	}
 
 	&__sub-menu {
+		cursor: auto;
 		width: 150px;
 		opacity: 0;
 		visibility: hidden;
@@ -65,7 +78,7 @@
 	}
 
 	&__sub-link {
-		padding: 5px 10px 5px 5px;
+		padding: 5px 10px 0 5px;
 		font-size: $main-font-size;
 		display: block;
 		margin-bottom: 10px;
@@ -74,18 +87,9 @@
 	&__arrow {
 		@extend %arrow;
 		margin-right: 6px;
-
-		&--down {
-			transform: rotate(45deg);
-			-webkit-transform: rotate(45deg);
-			transition: 0.5s;
-		}
-
-		&--active {
-			transform: rotate(-135deg);
-			-webkit-transform: rotate(-135deg);
-			transition: 0.5s;
-		}
+		transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+		transition: 0.5s;
 	}
 
 	/*

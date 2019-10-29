@@ -1404,8 +1404,17 @@ body {
     padding: 5px; }
   .menu__sub {
     padding-top: 0;
-    cursor: pointer; }
+    cursor: pointer;
+    position: relative; }
+    .menu__sub:hover .menu__sub-menu {
+      opacity: 1;
+      visibility: visible; }
+    .menu__sub:hover .menu__arrow {
+      transform: rotate(-135deg);
+      -webkit-transform: rotate(-135deg);
+      transition: 0.5s; }
   .menu__sub-menu {
+    cursor: auto;
     width: 150px;
     opacity: 0;
     visibility: hidden;
@@ -1417,20 +1426,15 @@ body {
       opacity: 1;
       visibility: visible; }
   .menu__sub-link {
-    padding: 5px 10px 5px 5px;
+    padding: 5px 10px 0 5px;
     font-size: 16px;
     display: block;
     margin-bottom: 10px; }
   .menu__arrow {
-    margin-right: 6px; }
-    .menu__arrow--down {
-      transform: rotate(45deg);
-      -webkit-transform: rotate(45deg);
-      transition: 0.5s; }
-    .menu__arrow--active {
-      transform: rotate(-135deg);
-      -webkit-transform: rotate(-135deg);
-      transition: 0.5s; }
+    margin-right: 6px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transition: 0.5s; }
   .menu__contact {
     margin-right: auto; }
   .menu__tel {
@@ -1489,17 +1493,16 @@ body {
       background: rgba(0, 0, 0, 0.201); }
   .slider__text {
     max-width: 600px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    z-index: 1; }
   .slider__title {
     text-align: center;
     font-size: 36px;
-    font-weight: 500;
-    z-index: 2; }
+    font-weight: 500; }
   .slider__desc {
     text-align: center;
     font-size: 28px;
     color: #fff;
-    color: rgba(255, 255, 255, 0.6);
-    z-index: 2; }
+    color: rgba(255, 255, 255, 0.6); }
 
 /*# sourceMappingURL=main.css.map */

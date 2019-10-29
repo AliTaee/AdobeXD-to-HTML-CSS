@@ -15,13 +15,14 @@
 			<ul class="menu__list">
 				<li class="menu__item"><a href="#" class="menu__link">خانه</a></li>
 				<li class="menu__item">
-					<p class="menu__sub menu__link">محصولات<span class="menu__arrow menu__arrow--down"></span></p>
-					<ul class="menu__sub-menu">
-						<li class="menu__sub-item"><a class="menu__sub-link" href="#">ساب منو</a></li>
-						<li class="menu__sub-tem"><a class="menu__sub-link" href="#">ساب منو</a></li>
-						<li class="menu__sub-item"><a class="menu__sub-link" href="#">ساب منو</a></li>
-						<li class="menu__sub-item"><a class="menu__sub-link" href="#">ساب منو</a></li>
-					</ul>
+					<div class="menu__sub menu__link">محصولات<span class="menu__arrow menu__arrow--down"></span>
+						<ul class="menu__sub-menu">
+							<li class="menu__sub-item"><a class="menu__sub-link" href="#">ساب منو</a></li>
+							<li class="menu__sub-tem"><a class="menu__sub-link" href="#">ساب منو</a></li>
+							<li class="menu__sub-item"><a class="menu__sub-link" href="#">ساب منو</a></li>
+							<li class="menu__sub-item"><a class="menu__sub-link" href="#">ساب منو</a></li>
+						</ul>
+					</div>
 				</li>
 				<li class="menu__item"><a href="#" class="menu__link">درباره </a></li>
 				<li class="menu__item"><a href="#" class="menu__link">تماس</a></li>
