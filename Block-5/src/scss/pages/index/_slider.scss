@@ -1,39 +1,57 @@
 .slider {
-    height: calc(100vh - 100px);
-    background: $black;
-    color: $white;
+	height: calc(100vh - 100px);
+	background: $black;
+	color: $white;
 
-    &__wrapper {
-        height: 100%;
-        width: 100%;
-        position: relative;
-        overflow: hidden;
-    }
+	&__wrapper {
+		height: 100%;
+		position: relative;
+		overflow: hidden;
+	}
 
-    &__item {
-        @extend %full-bg;
-        display: flex;
-        position: absolute;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-        width: 100%;
-        
-        &--active {
-            z-index: 3;
-        }
-    }
+	&__item {
+		@extend %full-bg;
+		display: flex;
+		position: relative;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		height: 100%;
+		width: 100%;
+		
+		&--active {
+			z-index: 3;
+		}
 
-    &__title {
-        font-size: 36px;
-        font-weight: 500;
-    }
+		&:before {
+			position: absolute;
+			top:0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			content: "";
+			background: rgba(0, 0, 0, 0.201);
+		}
+	}
 
-    &__desc {
-        font-size: 28px;
-        color: #fff;
-        color: rgba(255, 255, 255, 0.6);
-    }
+	&__text {
+		max-width: 600px;
+		margin: 0 auto;
+	}
+
+	&__title {
+		text-align: center;
+		font-size: 36px;
+		font-weight: 500;
+		z-index: 2;
+	}
+
+	&__desc {
+		text-align: center;
+		font-size: 28px;
+		color: #fff;
+		color: rgba(255, 255, 255, 0.6);
+		z-index: 2;
+	}
 
 }

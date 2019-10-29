@@ -1360,7 +1360,7 @@ body {
 
 .menu__arrow {
   border: solid #fff;
-  border-width: 0 3px 3px 0;
+  border-width: 0 2px 2px 0;
   display: inline-block;
   padding: 3px; }
 
@@ -1370,22 +1370,23 @@ body {
   position: relative;
   z-index: 10;
   /*
-    * Menu navigation
-    */
+	* Menu navigation
+	*/
   /*
-    * Contact info
-    */
+	* Contact info
+	*/
   /*
-    * Logo and site title
-    */ }
+	* Logo and site title
+	*/ }
   .menu__wrapper {
-    width: 1440px;
+    max-width: 1440px;
     height: 100px;
     display: flex;
     position: relative;
     flex-direction: row;
     align-items: center;
     margin: 0 auto;
+    padding: 0 31px 0 53px;
     color: #fff; }
     .menu__wrapper a {
       color: #fff; }
@@ -1397,7 +1398,7 @@ body {
   .menu__list {
     display: flex; }
   .menu__item {
-    margin-left: 15px; }
+    margin-left: 40px; }
   .menu__link {
     font-size: 20px;
     padding: 5px; }
@@ -1418,12 +1419,14 @@ body {
   .menu__sub-link {
     padding: 5px 10px 5px 5px;
     font-size: 16px;
-    display: block; }
+    display: block;
+    margin-bottom: 10px; }
   .menu__arrow {
     margin-right: 6px; }
     .menu__arrow--down {
       transform: rotate(45deg);
-      -webkit-transform: rotate(45deg); }
+      -webkit-transform: rotate(45deg);
+      transition: 0.5s; }
     .menu__arrow--active {
       transform: rotate(-135deg);
       -webkit-transform: rotate(-135deg);
@@ -1445,7 +1448,7 @@ body {
     margin: 6px 7px 0 0; }
   .menu__img-logo {
     margin-left: 16px;
-    width: 47px;
+    max-width: 47px;
     float: right; }
   .menu__text-wrapper {
     float: left; }
@@ -1464,12 +1467,11 @@ body {
   color: #fff; }
   .slider__wrapper {
     height: 100%;
-    width: 100%;
     position: relative;
     overflow: hidden; }
   .slider__item {
     display: flex;
-    position: absolute;
+    position: relative;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -1477,12 +1479,27 @@ body {
     width: 100%; }
     .slider__item--active {
       z-index: 3; }
+    .slider__item:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      content: "";
+      background: rgba(0, 0, 0, 0.201); }
+  .slider__text {
+    max-width: 600px;
+    margin: 0 auto; }
   .slider__title {
+    text-align: center;
     font-size: 36px;
-    font-weight: 500; }
+    font-weight: 500;
+    z-index: 2; }
   .slider__desc {
+    text-align: center;
     font-size: 28px;
     color: #fff;
-    color: rgba(255, 255, 255, 0.6); }
+    color: rgba(255, 255, 255, 0.6);
+    z-index: 2; }
 
 /*# sourceMappingURL=main.css.map */
