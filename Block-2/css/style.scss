@@ -1,0 +1,72 @@
+@import './sass/css_reset';
+@import './sass/var';
+
+body {
+    font-family: $font-family-vazir;
+    display: flex;
+    direction: rtl;
+    text-align: right;
+    align-content: center;
+    justify-content: center;
+}
+
+.site-header {
+    width: $main_container_width;
+    height: $main_container_height;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+    padding: 0 140px;
+
+    @at-root #{&}__logo-img {
+        width: 163px;
+    }
+
+    @at-root #{&}__main-menu {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    @at-root #{&}__menu-list {
+        list-style-type: none;
+    }
+
+    @at-root #{&}__menu-item {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    @at-root #{&}__menu-item:first-child {
+        margin-right: 0;
+    }
+
+    @at-root #{&}__menu-item--menu-item {
+        padding: 10px;
+        text-decoration: none;
+        color: $main_color;
+        color: $main_color_transparent;
+        font-size: $main_font_size;
+    }
+
+    @at-root #{&}__button {
+        border: 1px solid;
+        border-radius: 4px;
+        background: $main_background;
+        width: 180px;
+        height: 44px;
+        text-decoration: none;
+        font-size: 13px;
+        font-weight: 500;
+        margin-right: auto;
+        text-align: center;
+        padding-top: 12px;
+    }
+
+    @at-root #{&}__button--blue {
+        border-color: $btn_color;
+        color: $btn_color;
+    }
+}

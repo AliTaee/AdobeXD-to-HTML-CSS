@@ -1,7 +1,4 @@
-node_modules/
-public/
-.git-ftp-ignore
-.git-ftp-include
-.vscode/
-disc.html
-.env
+_Developer
+Block-5/node_modules
+Block-5/.env
+

@@ -1,0 +1,152 @@
+/*
+* Css Reset
+*/
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*
+* Font
+*/
+@font-face {
+  font-family: 'Vazir';
+  font-weight: 300;
+  src: url("../assets/fonts/vazir/light/vazir-light.eot");
+  src: url("../assets/fonts/vazir/light/vazir-light.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/vazir/light/vazir-light.woff") format("woff"), url("../assets/fonts/vazir/light/vazir-light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Vazir';
+  font-weight: normal;
+  src: url("../assets/fonts/vazir/normal/vazir-normal.eot");
+  src: url("../assets/fonts/vazir/normal/vazir-normal.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/vazir/normal/vazir-normal.woff") format("woff"), url("../assets/fonts/vazir/normal/vazir-normal.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Vazir';
+  font-weight: 500;
+  src: url("../assets/fonts/vazir/medium/vazir-medium.eot");
+  src: url("../assets/fonts/vazir/medium/vazir-medium.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/vazir/medium/vazir-medium.woff") format("woff"), url("../assets/fonts/vazir/medium/vazir-medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Vazir';
+  font-weight: bold;
+  src: url("../assets/fonts/vazir/bold/vazir-bold.eot");
+  src: url("../assets/fonts/vazir/bold/vazir-bold.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/vazir/bold/vazir-bold.woff") format("woff"), url("../assets/fonts/vazir/bold/vazir-bold.ttf") format("truetype");
+}
+
+body {
+  font-family: "Vazir";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  direction: rtl;
+  text-align: right;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.site-header {
+  width: 1440px;
+  height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  margin: 0 auto;
+  padding: 0 140px;
+}
+
+.site-header__logo-img {
+  width: 163px;
+}
+
+.site-header__main-menu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.site-header__menu-list {
+  list-style-type: none;
+}
+
+.site-header__menu-item {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.site-header__menu-item:first-child {
+  margin-right: 0;
+}
+
+.site-header__menu-item--menu-item {
+  padding: 10px;
+  text-decoration: none;
+  color: #000000;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 18px;
+}
+
+.site-header__button {
+  border: 1px solid;
+  border-radius: 4px;
+  background: #fff;
+  width: 180px;
+  height: 44px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  margin-right: auto;
+  text-align: center;
+  padding-top: 12px;
+}
+
+.site-header__button--blue {
+  border-color: #3081E9;
+  color: #3081E9;
+}
+/*# sourceMappingURL=style.css.map */

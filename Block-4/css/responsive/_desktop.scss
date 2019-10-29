@@ -1,0 +1,46 @@
+@media only screen and (max-width: $desktop-l) {
+
+    .intro__wrapper {
+        padding: 0 15px;
+    }
+
+    .services {
+        @at-root #{&}__action {
+            max-width: 90%;
+            padding: 23px 20px 22px;
+        }
+
+        .btn:nth-child(even) {
+            margin-right: 4%;
+        }
+    }
+
+    .services__back,
+    .services__img {
+            max-width: 100%;
+    }
+
+    .customers__col,
+    .services .btn {
+        max-width: 48%;
+    }
+
+    .customers__col {
+        padding: 58px 36px 58px 44px;
+    }
+
+    .video {
+        @at-root #{&}__text {
+            max-width: 50%;
+            font-size: $font-main-size-s;
+        }
+
+        @at-root #{&}__list-item {
+            max-width: 95%;
+        }
+
+        @at-root #{&}__player {
+            max-width: 45%;
+        }
+    }
+}

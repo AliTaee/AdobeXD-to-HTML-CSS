@@ -1,0 +1,35 @@
+@import './sass/var';
+@import './sass/mixin';
+@import './sass/css_reset';
+@import './sass/aparat';
+
+body {
+    font-family: $font-family-vazir;
+    background: $background_white;
+    direction: rtl;
+    text-align: right;
+}
+
+/*
+* Partials
+*/
+@import './partials/buttons';
+@import './partials/clearfix';
+@import './partials/grids';
+
+/*
+* Main Blocks
+*/
+@import './blocks/intro';
+@import './blocks/services';
+@import './blocks/video';
+@import './blocks/customers';
+@import './blocks/footer';
+
+/*
+* Responsive section
+*/
+@import './responsive/desktop';
+@import './responsive/tablet';
+@import './responsive/tablet-s';
+@import './responsive/mobile';

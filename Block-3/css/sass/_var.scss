@@ -1,0 +1,71 @@
+// Font color
+$main_color: #000000;
+$main_title_color: #303336;
+$black_gray: #7F7F7F;
+$light_gray: #F5F7FA;
+$white_color: #fff;
+$main_color_transparent_60: rgba( $main_color, .60 );
+$main_color_transparent_50: rgba( $main_color, .50 ); 
+$btn_color: #3081E9;
+
+// Font size
+$main_text_font_size: 18px;
+$header_text_font_size: 32px;
+$main_small_text_font_size: $main_text_font_size - 2;
+$button_font_size: $main_text_font_size + 1;
+$input_font_size: $main_text_font_size - 1;
+
+// Font weight
+$medium: 500;
+
+// Size
+$main_container_width: 1160px;
+
+// Mobile
+$desktop_responsive: $main_container_width + 100;
+$tablet_L_responsive: 945px;
+$tablet_M_responsive: 757px;
+$mobile_responsive: 480px;
+
+/*
+* Font
+*/
+
+// Vazir
+@font-face {
+    font-family: 'Vazir';
+    font-weight: 300;
+    src: url('../assets/fonts/vazir/light/vazir-light.eot');
+    src: url('../assets/fonts/vazir/light/vazir-light.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/vazir/light/vazir-light.woff') format('woff'),
+    url('../assets/fonts/vazir/light/vazir-light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Vazir';
+    font-weight: normal;
+    src: url('../assets/fonts/vazir/normal/vazir-normal.eot');
+    src: url('../assets/fonts/vazir/normal/vazir-normal.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/vazir/normal/vazir-normal.woff') format('woff'),
+    url('../assets/fonts/vazir/normal/vazir-normal.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Vazir';
+    font-weight: 500;
+    src: url('../assets/fonts/vazir/medium/vazir-medium.eot');
+    src: url('../assets/fonts/vazir/medium/vazir-medium.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/vazir/medium/vazir-medium.woff') format('woff'),
+    url('../assets/fonts/vazir/medium/vazir-medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Vazir';
+    font-weight: bold;
+    src: url('../assets/fonts/vazir/bold/vazir-bold.eot');
+    src: url('../assets/fonts/vazir/bold/vazir-bold.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/vazir/bold/vazir-bold.woff') format('woff'),
+    url('../assets/fonts/vazir/bold/vazir-bold.ttf') format('truetype');
+}
+
+$font-family-vazir: 'Vazir';
