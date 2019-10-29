@@ -11594,25 +11594,24 @@ var _jquery = _interopRequireDefault(require("jquery"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 (0, _jquery["default"])(document).ready(function () {
-  var sliderFunc = function sliderFunc() {
-    var index = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 1;
-    var time = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 6000;
-    var slider = (0, _jquery["default"])(".slider__item");
-
-    if (index >= slider.length) {
-      (0, _jquery["default"])(slider[index - 1]).removeClass("slider__item--active").fadeOut(1000);
-      index = 0;
-      (0, _jquery["default"])(slider[index]).addClass("slider__item--active").fadeIn(1000);
-    } else {
-      (0, _jquery["default"])(slider[index - 1]).removeClass("slider__item--active").fadeOut(1000);
-      (0, _jquery["default"])(slider[index]).addClass("slider__item--active").fadeIn(1000);
-      index++;
-    }
-
-    setTimeout(sliderFunc, time);
+  var slider = function slider() {
+    var time = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 6000;
+    var sliderItems = (0, _jquery["default"])(".slider__item");
+    var index = 1;
+    setInterval(function sliderFunc() {
+      if (index >= sliderItems.length) {
+        (0, _jquery["default"])(sliderItems[index - 1]).removeClass("slider__item--active").fadeOut(1000);
+        index = 0;
+        (0, _jquery["default"])(sliderItems[index]).addClass("slider__item--active").fadeIn(1000);
+      } else {
+        (0, _jquery["default"])(sliderItems[index - 1]).removeClass("slider__item--active").fadeOut(1000);
+        (0, _jquery["default"])(sliderItems[index]).addClass("slider__item--active").fadeIn(1000);
+        index++;
+      }
+    }, time);
   };
 
-  window.onload = sliderFunc;
+  window.onload = slider(6000);
 });
 
 },{"core-js/modules/web.timers":45,"jquery":46}],55:[function(require,module,exports){
