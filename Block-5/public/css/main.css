@@ -1466,6 +1466,7 @@ body {
     .menu__hum-item:after, .menu__hum-item:before {
       content: '';
       position: absolute;
+      transition: all .2s;
       left: 0;
       width: 28px;
       height: 3px;
@@ -1474,6 +1475,16 @@ body {
       top: 11px; }
     .menu__hum-item:before {
       top: -11px; }
+    .menu__hum-item--active span:after {
+      top: 0;
+      -webkit-transform: rotate(-135deg);
+      transform: rotate(-135deg); }
+    .menu__hum-item--active span {
+      background: transparent; }
+    .menu__hum-item--active span:before {
+      top: 0;
+      -webkit-transform: rotate(135deg);
+      transform: rotate(135deg); }
   .menu__contact {
     margin-right: auto; }
   .menu__tel {

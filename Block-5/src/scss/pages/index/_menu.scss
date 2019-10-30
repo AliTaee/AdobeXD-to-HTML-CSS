@@ -119,6 +119,7 @@
 		&:before {
 			content: '';
 			position: absolute;
+			transition: all .2s;
 			left: 0;
 			width: 28px;
 			height: 3px;
@@ -132,6 +133,25 @@
 		&:before {
 			top: -11px;
 		}
+
+		&--active {
+			span:after {
+				top: 0;
+				-webkit-transform: rotate(-135deg);
+				transform: rotate(-135deg);
+			}
+
+			span {
+				background: transparent;
+			}
+
+			span:before {
+				top: 0;
+				-webkit-transform: rotate(135deg);
+				transform: rotate(135deg);
+			}
+		}
+
 	}
 
 	/*

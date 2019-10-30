@@ -11574,17 +11574,32 @@ require("./common/");
 
 require("./pages/");
 
-},{"./common/":49,"./helpers/":50,"./modules/":52,"./pages/":55,"svgxuse":47}],52:[function(require,module,exports){
+},{"./common/":49,"./helpers/":50,"./modules/":52,"./pages/":56,"svgxuse":47}],52:[function(require,module,exports){
 "use strict";
 
 require("./modal");
 
 require("./slider");
 
-},{"./modal":53,"./slider":54}],53:[function(require,module,exports){
+require("./menu");
+
+},{"./menu":53,"./modal":54,"./slider":55}],53:[function(require,module,exports){
 "use strict";
 
-},{}],54:[function(require,module,exports){
+var _jquery = _interopRequireDefault(require("jquery"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+(0, _jquery["default"])(document).ready(function () {
+  (0, _jquery["default"])(".menu__hum").click(function () {
+    (0, _jquery["default"])(this).toggleClass("menu__hum-item--active");
+  });
+});
+
+},{"jquery":46}],54:[function(require,module,exports){
+"use strict";
+
+},{}],55:[function(require,module,exports){
 "use strict";
 
 require("core-js/modules/es.object.define-property");
@@ -11709,8 +11724,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
   window.onload = headerSlider.start();
 });
 
-},{"core-js/modules/es.object.define-property":44,"core-js/modules/web.timers":45,"jquery":46}],55:[function(require,module,exports){
-arguments[4][53][0].apply(exports,arguments)
-},{"dup":53}]},{},[51])
+},{"core-js/modules/es.object.define-property":44,"core-js/modules/web.timers":45,"jquery":46}],56:[function(require,module,exports){
+arguments[4][54][0].apply(exports,arguments)
+},{"dup":54}]},{},[51])
 
 //# sourceMappingURL=script.js.map
