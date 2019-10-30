@@ -27,9 +27,6 @@
 					</li>
 					<li class="menu__item"><a href="#" class="menu__link">درباره </a></li>
 					<li class="menu__item"><a href="#" class="menu__link">تماس</a></li>
-					<li class="menu__item"><a href="#" class="menu__link">درباره </a></li>
-					<li class="menu__item"><a href="#" class="menu__link">تماس</a></li>
-					<li class="menu__item"><a href="#" class="menu__link">تماس</a></li>
 				</ul>
 			</nav>
 
