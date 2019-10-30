@@ -94,6 +94,28 @@
 	}
 
 	/*
+	* Menu hamburger
+	*/
+	&__hum {
+		cursor: pointer;
+		display: block;
+		visibility: hidden;
+		opacity: 0;
+		& span:last-child {
+			margin-bottom: 0;
+		}
+	}
+	
+
+	&__hum-item {
+		width: 28px;
+		height: 3px;
+		margin-bottom: 11px;
+		background: white;
+		display: block;
+	}
+
+	/*
 	* Contact info
 	*/
 

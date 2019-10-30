@@ -38,5 +38,11 @@
 				۴۴۰</a>
 		</div>
 
+		<div class="menu__hum">
+			<span class="menu__hum-item"></span>
+			<span class="menu__hum-item"></span>
+			<span class="menu__hum-item"></span>
+		</div>
+
 	</div>
 </header>

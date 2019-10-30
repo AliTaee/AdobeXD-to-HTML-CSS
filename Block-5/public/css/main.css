@@ -1384,6 +1384,9 @@ body {
 	* Menu navigation
 	*/
   /*
+	* Menu hamburger
+	*/
+  /*
 	* Contact info
 	*/
   /*
@@ -1447,6 +1450,19 @@ body {
     transition: 0.5s;
     position: absolute;
     bottom: 20px; }
+  .menu__hum {
+    cursor: pointer;
+    display: block;
+    visibility: hidden;
+    opacity: 0; }
+    .menu__hum span:last-child {
+      margin-bottom: 0; }
+  .menu__hum-item {
+    width: 28px;
+    height: 3px;
+    margin-bottom: 11px;
+    background: white;
+    display: block; }
   .menu__contact {
     margin-right: auto; }
   .menu__tel {
@@ -1551,5 +1567,10 @@ body {
 @media only screen and (max-width: 1400px) {
   .menu__item {
     margin-left: 20px; } }
+
+@media only screen and (max-width: 1050px) {
+  .menu__hum {
+    visibility: visible;
+    opacity: 1; } }
 
 /*# sourceMappingURL=main.css.map */
