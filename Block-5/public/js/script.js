@@ -11605,12 +11605,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
   var slider =
   /*#__PURE__*/
   function () {
-    function slider(time, sliderContainer, bulletContainer) {
+    function slider(time, sliderContainer, bulletContainer, bullet) {
       _classCallCheck(this, slider);
 
       this.time = time;
       this.sliderContainer = sliderContainer;
       this.bulletContainer = bulletContainer;
+      this.bullet = bullet;
       this.index = 1;
     }
 
@@ -11618,18 +11619,20 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       key: "slide",
       value: function slide() {
         var sliderItems = (0, _jquery["default"])(this.sliderContainer);
+        var bullet = (0, _jquery["default"])(this.bullet);
         var index = this.index;
-        this.bulletGenerate();
         setInterval(function sliderFunc() {
-          console.log(index);
-
           if (index < sliderItems.length) {
             (0, _jquery["default"])(sliderItems[index]).addClass("slider__item--active");
             (0, _jquery["default"])(sliderItems[index - 1]).removeClass("slider__item--active");
+            (0, _jquery["default"])(bullet[index]).addClass("slider__bullet--active");
+            (0, _jquery["default"])(bullet[index - 1]).removeClass("slider__bullet--active");
             index++;
           } else {
             (0, _jquery["default"])(sliderItems[0]).addClass("slider__item--active");
             (0, _jquery["default"])(sliderItems[index - 1]).removeClass("slider__item--active");
+            (0, _jquery["default"])(bullet[0]).addClass("slider__bullet--active");
+            (0, _jquery["default"])(bullet[index - 1]).removeClass("slider__bullet--active");
             index = 1;
           }
         }, this.time);
@@ -11641,23 +11644,29 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         var bulletNumber = (0, _jquery["default"])(this.sliderContainer).length;
 
         for (var index = 1; index <= bulletNumber; index++) {
-          if (index === 1) {
+          if (index === 3) {
             (0, _jquery["default"])(bulletContainer).prepend("<span class='slider__bullet slider__bullet--active'></span>");
           } else {
             (0, _jquery["default"])(bulletContainer).prepend("<span class='slider__bullet'></span>");
           }
         }
       }
+    }, {
+      key: "start",
+      value: function start() {
+        this.bulletGenerate();
+        this.slide();
+      }
     }]);
 
     return slider;
   }();
 
-  ; // Time - slider wrapper - bullet wrapper
+  ; // Time - slider wrapper - slider bullet wrapper - slider bullet
 
-  var headerSlider = new slider(3000, ".slider__item", ".slider__nav"); // Start when page is load
+  var headerSlider = new slider(4000, ".slider__item", ".slider__nav", ".slider__bullet"); // Start when page is load
 
-  window.onload = headerSlider.slide();
+  window.onload = headerSlider.start();
 });
 
 },{"core-js/modules/es.object.define-property":44,"core-js/modules/web.timers":45,"jquery":46}],55:[function(require,module,exports){

@@ -1494,7 +1494,7 @@ body {
     z-index: 1;
     opacity: 0; }
     .slider__item--active {
-      animation: fadeinout 1s linear;
+      animation: fadeinout 2s;
       opacity: 1;
       z-index: 2; }
     .slider__item:before {
@@ -1530,13 +1530,14 @@ body {
     background: #fff;
     background: rgba(255, 255, 255, 0.401);
     border-radius: 50%;
-    margin-right: 12px;
     display: block;
-    cursor: pointer; }
+    cursor: pointer;
+    margin: 2px 12px 2px 0; }
     .slider__bullet--active {
       width: 18px;
       height: 18px;
       background: #fff;
-      box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.161); }
+      box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.161);
+      margin: 0 12px 0 0; }
 
 /*# sourceMappingURL=main.css.map */
