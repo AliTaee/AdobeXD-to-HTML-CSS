@@ -1364,6 +1364,14 @@ body {
   100% {
     opacity: 1; } }
 
+@keyframes textSlider {
+  0% {
+    opacity: 0;
+    transform: translateY(60px); }
+  100% {
+    opacity: 1;
+    transform: none; } }
+
 .menu__arrow {
   border: solid #fff;
   border-width: 0 2px 2px 0;
@@ -1509,6 +1517,8 @@ body {
     max-width: 600px;
     margin: 0 auto;
     z-index: 1; }
+    .slider__text--active {
+      animation: textSlider 4s; }
   .slider__title {
     text-align: center;
     font-size: 36px;

@@ -11605,13 +11605,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
   var slider =
   /*#__PURE__*/
   function () {
-    function slider(time, sliderContainer, bulletContainer, bullet) {
+    function slider(time, sliderContainer, bulletContainer, bullet, sliderText) {
       _classCallCheck(this, slider);
 
       this.time = time;
       this.timer = null;
       this.sliderContainer = sliderContainer;
       this.bulletContainer = bulletContainer;
+      this.sliderText = sliderText;
       this.bullet = bullet;
       this.index = 1;
     }
@@ -11620,17 +11621,28 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       key: "slide",
       value: function slide(index) {
         var sliderItems = (0, _jquery["default"])(this.sliderContainer);
+        var sliderText = (0, _jquery["default"])(this.sliderText);
         var bullet = (0, _jquery["default"])(this.bullet);
         this.timer = setInterval(function sliderFunc() {
           if (index < sliderItems.length) {
+            // Slider
             (0, _jquery["default"])(sliderItems[index]).addClass("slider__item--active");
-            (0, _jquery["default"])(sliderItems[index - 1]).removeClass("slider__item--active");
+            (0, _jquery["default"])(sliderItems[index - 1]).removeClass("slider__item--active"); // Animation slider text
+
+            (0, _jquery["default"])(sliderText[index]).addClass("slider__text--active");
+            (0, _jquery["default"])(sliderText[index - 1]).removeClass("slider__text--active"); // Bullets
+
             (0, _jquery["default"])(bullet[index]).addClass("slider__bullet--active");
             (0, _jquery["default"])(bullet[index - 1]).removeClass("slider__bullet--active");
             index++;
           } else {
+            // Slider
             (0, _jquery["default"])(sliderItems[0]).addClass("slider__item--active");
-            (0, _jquery["default"])(sliderItems[index - 1]).removeClass("slider__item--active");
+            (0, _jquery["default"])(sliderItems[index - 1]).removeClass("slider__item--active"); // Animation slider text
+
+            (0, _jquery["default"])(sliderText[0]).addClass("slider__text--active");
+            (0, _jquery["default"])(sliderText[index - 1]).removeClass("slider__text--active"); // Bullets
+
             (0, _jquery["default"])(bullet[0]).addClass("slider__bullet--active");
             (0, _jquery["default"])(bullet[index - 1]).removeClass("slider__bullet--active");
             index = 1;
@@ -11658,18 +11670,22 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         var sliderItems = (0, _jquery["default"])(this.sliderContainer);
         var bullet = (0, _jquery["default"])(this.bullet);
+        var sliderText = (0, _jquery["default"])(this.sliderText);
         (0, _jquery["default"])(bullet).on("click", function (e) {
           clearInterval(_this.timer); // Remove Active class
 
           for (var index = 0; index < bullet.length; index++) {
             (0, _jquery["default"])(bullet[index]).removeClass("slider__bullet--active");
             (0, _jquery["default"])(sliderItems[index]).removeClass("slider__item--active");
+            (0, _jquery["default"])(sliderText[index]).removeClass("slider__text--active");
           } // Set active class to current user click bullet
 
 
           (0, _jquery["default"])(e.target).addClass("slider__bullet--active"); // Active slide
 
-          (0, _jquery["default"])(sliderItems[e.target.attributes.sliderIndex.value - 1]).addClass("slider__item--active"); // Start to slide from current active slide
+          (0, _jquery["default"])(sliderItems[e.target.attributes.sliderIndex.value - 1]).addClass("slider__item--active"); // Animation slider text
+
+          (0, _jquery["default"])(sliderText[e.target.attributes.sliderIndex.value - 1]).addClass("slider__text--active"); // Start to slide from current active slide
 
           _this.slide(e.target.attributes.sliderIndex.value - 1);
         });
@@ -11688,7 +11704,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   ; // Time - slider wrapper - slider bullet wrapper - slider bullet
 
-  var headerSlider = new slider(4000, ".slider__item", ".slider__nav", ".slider__bullet"); // Start when page is load
+  var headerSlider = new slider(4000, ".slider__item", ".slider__nav", ".slider__bullet", ".slider__text"); // Start when page is load
 
   window.onload = headerSlider.start();
 });
