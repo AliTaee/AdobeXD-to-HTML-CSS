@@ -96,23 +96,42 @@
 	/*
 	* Menu hamburger
 	*/
+
+	&__ham-wrapper {
+		margin-right: auto;
+	}
+
 	&__hum {
 		cursor: pointer;
 		display: block;
 		visibility: hidden;
 		opacity: 0;
-		& span:last-child {
-			margin-bottom: 0;
-		}
 	}
-	
 
 	&__hum-item {
+		display: table-cell;
+		position: relative;
 		width: 28px;
 		height: 3px;
-		margin-bottom: 11px;
-		background: white;
-		display: block;
+		background: $white;
+
+		&:after,
+		&:before {
+			content: '';
+			position: absolute;
+			left: 0;
+			width: 28px;
+			height: 3px;
+			background: $white;
+		}
+
+		&:after {
+			top: 11px;
+		}
+
+		&:before {
+			top: -11px;
+		}
 	}
 
 	/*

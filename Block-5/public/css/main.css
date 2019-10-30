@@ -1450,19 +1450,30 @@ body {
     transition: 0.5s;
     position: absolute;
     bottom: 20px; }
+  .menu__ham-wrapper {
+    margin-right: auto; }
   .menu__hum {
     cursor: pointer;
     display: block;
     visibility: hidden;
     opacity: 0; }
-    .menu__hum span:last-child {
-      margin-bottom: 0; }
   .menu__hum-item {
+    display: table-cell;
+    position: relative;
     width: 28px;
     height: 3px;
-    margin-bottom: 11px;
-    background: white;
-    display: block; }
+    background: #fff; }
+    .menu__hum-item:after, .menu__hum-item:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 28px;
+      height: 3px;
+      background: #fff; }
+    .menu__hum-item:after {
+      top: 11px; }
+    .menu__hum-item:before {
+      top: -11px; }
   .menu__contact {
     margin-right: auto; }
   .menu__tel {
