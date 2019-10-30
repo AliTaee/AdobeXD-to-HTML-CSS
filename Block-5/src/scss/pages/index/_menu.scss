@@ -9,7 +9,6 @@
 		max-width: 1440px;
 		height: 100px;
 		display: flex;
-		position: relative;
 		flex-direction: row;
 		align-items: center;
 		margin: 0 auto;
@@ -90,6 +89,8 @@
 		transform: rotate(45deg);
 		-webkit-transform: rotate(45deg);
 		transition: 0.5s;
+		position: absolute;
+		bottom: 20px;
 	}
 
 	/*
