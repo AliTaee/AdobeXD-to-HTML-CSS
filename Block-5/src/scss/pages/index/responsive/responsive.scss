@@ -1,62 +1,7 @@
-
 @media only screen and (max-width: $lg) {
-	
 	.menu {
 		&__item {
 			margin-left: 20px;
-		}
-	}
-}
-
-@media only screen and (max-width: $md) {
-
-	.menu {
-		&__nav {
-			position: initial;
-			top: 0;
-			left: 0;
-			transform: none;
-		}
-
-		&__wrapper {
-			padding: 0 15px 0 20px;
-		}
-
-		&__list {
-			&:first-child {
-				margin-right: 12px;
-			}
-		}
-
-		&__site-title {
-			font-size: 18px;
-		}
-
-		&__tel,
-		&__site-desc {
-			font-size: 14px;
-		}
-
-		&__link {
-			font-size: 16px;
-		}
-
-		&__item {
-			margin-left: 12px;
-		}
-
-		&__sub {
-			margin-left: 12px;
-		}
-	}
-
-	.slider {
-		&__title {
-			font-size: 26px;
-		}
-
-		&__desc {
-			font-size: 25px;
 		}
 	}
 }
