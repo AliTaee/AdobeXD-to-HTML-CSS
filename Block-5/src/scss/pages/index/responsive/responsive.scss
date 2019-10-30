@@ -29,3 +29,34 @@
 		}
 	}
 }
+
+
+@media only screen and (max-width: $sm) {
+	.slider__nav {
+		right: 42%;
+	}
+}
+
+@media only screen and (max-width: $xxs) {
+
+	.menu {
+		&__wrapper {
+			padding: 0 32px 0 23px;
+		}
+		
+	}
+
+	.slider {
+		&__title {
+			font-size: 21px;
+		}
+
+		&__desc {
+			font-size: 20px;
+		}
+
+		&__nav {
+			right: 36%;
+		}
+	}
+}

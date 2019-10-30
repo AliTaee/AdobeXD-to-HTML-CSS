@@ -1606,4 +1606,18 @@ body {
     right: -40em;
     top: 0; } }
 
+@media only screen and (max-width: 800px) {
+  .slider__nav {
+    right: 42%; } }
+
+@media only screen and (max-width: 400px) {
+  .menu__wrapper {
+    padding: 0 32px 0 23px; }
+  .slider__title {
+    font-size: 21px; }
+  .slider__desc {
+    font-size: 20px; }
+  .slider__nav {
+    right: 36%; } }
+
 /*# sourceMappingURL=main.css.map */
