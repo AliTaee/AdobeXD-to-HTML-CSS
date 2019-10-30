@@ -11609,6 +11609,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _classCallCheck(this, slider);
 
       this.time = time;
+      this.timer = null;
       this.sliderContainer = sliderContainer;
       this.bulletContainer = bulletContainer;
       this.bullet = bullet;
@@ -11621,7 +11622,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         var sliderItems = (0, _jquery["default"])(this.sliderContainer);
         var bullet = (0, _jquery["default"])(this.bullet);
         var index = this.index;
-        setInterval(function sliderFunc() {
+        this.timer = setInterval(function sliderFunc() {
           if (index < sliderItems.length) {
             (0, _jquery["default"])(sliderItems[index]).addClass("slider__item--active");
             (0, _jquery["default"])(sliderItems[index - 1]).removeClass("slider__item--active");
@@ -11644,18 +11645,40 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         var bulletNumber = (0, _jquery["default"])(this.sliderContainer).length;
 
         for (var index = 1; index <= bulletNumber; index++) {
-          if (index === 3) {
-            (0, _jquery["default"])(bulletContainer).prepend("<span class='slider__bullet slider__bullet--active'></span>");
+          if (index === 1) {
+            (0, _jquery["default"])(bulletContainer).append("<span sliderIndex='".concat(index, "' class='slider__bullet slider__bullet--active'></span>"));
           } else {
-            (0, _jquery["default"])(bulletContainer).prepend("<span class='slider__bullet'></span>");
+            (0, _jquery["default"])(bulletContainer).append("<span sliderIndex='".concat(index, "' class='slider__bullet'></span>"));
           }
         }
+      }
+    }, {
+      key: "nav",
+      value: function nav() {
+        var _this = this;
+
+        var sliderItems = (0, _jquery["default"])(this.sliderContainer);
+        var bullet = (0, _jquery["default"])(this.bullet);
+        (0, _jquery["default"])(bullet).on("click", function (e) {
+          clearInterval(_this.timer); // Remove Active class
+
+          for (var index = 0; index < bullet.length; index++) {
+            (0, _jquery["default"])(bullet[index]).removeClass("slider__bullet--active");
+            (0, _jquery["default"])(sliderItems[index]).removeClass("slider__item--active");
+          } // Set active class to current user click bullet
+
+
+          (0, _jquery["default"])(e.target).addClass("slider__bullet--active"); // Active slide
+
+          (0, _jquery["default"])(sliderItems[e.target.attributes.sliderIndex.value - 1]).addClass("slider__item--active");
+        });
       }
     }, {
       key: "start",
       value: function start() {
         this.bulletGenerate();
         this.slide();
+        this.nav();
       }
     }]);
 
