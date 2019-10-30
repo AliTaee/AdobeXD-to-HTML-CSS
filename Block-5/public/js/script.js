@@ -11593,6 +11593,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "d
 (0, _jquery["default"])(document).ready(function () {
   (0, _jquery["default"])(".menu__hum").click(function () {
     (0, _jquery["default"])(this).toggleClass("menu__hum-item--active");
+    (0, _jquery["default"])('.menu__ham-wrapper').toggleClass("active");
   });
 });
 

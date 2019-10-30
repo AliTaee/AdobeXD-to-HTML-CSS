@@ -17,15 +17,35 @@
 		&__nav {
 			position: relative;
 			top: 0;
-			left: 0;
+			right: 0;
 			transform: none;
 		}
 
 		&__ham-wrapper {
+			background: #333333;
+			height: 100vh;
+			width: 100vw;
+			padding-top: 100px;
 			margin-right: 0;
 			position: absolute;
-			right: -40em;
+			right: 0;
 			top: 0;
+			transform: translateX(100%);
+		}
+
+		&__list {
+			display: flex;
+			flex-direction: column;
+		}
+
+		&__link {
+			font-size: 24px;
+		}
+
+		&__logo,
+		&__hum,
+		&__contact {
+			z-index: 101;
 		}
 	}
 }

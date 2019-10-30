@@ -97,7 +97,19 @@
 
 	&__ham-wrapper {
 		margin-right: auto;
+		transition: transform 0.5s;
+		
+		&.active {
+			right: 0;
+			height: 100vh;
+			width: 100vw;
+			transform: translateX(0);
+			padding-top: 100px;
+			background: #333333;
+			z-index: 100;
+		}
 	}
+
 
 	&__hum {
 		cursor: pointer;
