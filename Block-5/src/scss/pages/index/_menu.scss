@@ -55,7 +55,6 @@
 
 		&:hover .menu__arrow {
 			transform: rotate(-135deg);
-			-webkit-transform: rotate(-135deg);
 			transition: 0.5s;
 		}
 	}
@@ -87,7 +86,6 @@
 		@extend %arrow;
 		margin-right: 6px;
 		transform: rotate(45deg);
-		-webkit-transform: rotate(45deg);
 		transition: 0.5s;
 		position: absolute;
 		bottom: 20px;
@@ -137,7 +135,6 @@
 		&--active {
 			span:after {
 				top: 0;
-				-webkit-transform: rotate(-135deg);
 				transform: rotate(-135deg);
 			}
 
@@ -147,7 +144,6 @@
 
 			span:before {
 				top: 0;
-				-webkit-transform: rotate(135deg);
 				transform: rotate(135deg);
 			}
 		}

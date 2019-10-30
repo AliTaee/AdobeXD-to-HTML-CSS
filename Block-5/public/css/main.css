@@ -1446,7 +1446,6 @@ body {
   .menu__arrow {
     margin-right: 6px;
     transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
     transition: 0.5s;
     position: absolute;
     bottom: 20px; }
@@ -1477,13 +1476,11 @@ body {
       top: -11px; }
     .menu__hum-item--active span:after {
       top: 0;
-      -webkit-transform: rotate(-135deg);
       transform: rotate(-135deg); }
     .menu__hum-item--active span {
       background: transparent; }
     .menu__hum-item--active span:before {
       top: 0;
-      -webkit-transform: rotate(135deg);
       transform: rotate(135deg); }
   .menu__contact {
     margin-right: auto; }
@@ -1612,7 +1609,7 @@ body {
 
 @media only screen and (max-width: 400px) {
   .menu__wrapper {
-    padding: 0 32px 0 23px; }
+    padding: 0 24px; }
   .slider__title {
     font-size: 21px; }
   .slider__desc {
