@@ -12,11 +12,10 @@ $(document).ready(function () {
 			this.index = 1;
 		};
 
-		slide() {
+		slide(index) {
 
 			let sliderItems = $(this.sliderContainer);
 			let bullet = $(this.bullet);
-			let index = this.index;
 
 			this.timer = setInterval((function sliderFunc() {
 				if (index < sliderItems.length) {
@@ -70,12 +69,15 @@ $(document).ready(function () {
 
 				// Active slide
 				$(sliderItems[e.target.attributes.sliderIndex.value - 1]).addClass("slider__item--active");
+
+				// Start to slide from current active slide
+				this.slide(e.target.attributes.sliderIndex.value - 1);
 			});
 		}
 
 		start() {
 			this.bulletGenerate();
-			this.slide();
+			this.slide(this.index);
 			this.nav();
 		}
 	};

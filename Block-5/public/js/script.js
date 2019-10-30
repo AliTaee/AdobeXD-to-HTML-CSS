@@ -11618,10 +11618,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
     _createClass(slider, [{
       key: "slide",
-      value: function slide() {
+      value: function slide(index) {
         var sliderItems = (0, _jquery["default"])(this.sliderContainer);
         var bullet = (0, _jquery["default"])(this.bullet);
-        var index = this.index;
         this.timer = setInterval(function sliderFunc() {
           if (index < sliderItems.length) {
             (0, _jquery["default"])(sliderItems[index]).addClass("slider__item--active");
@@ -11670,14 +11669,16 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           (0, _jquery["default"])(e.target).addClass("slider__bullet--active"); // Active slide
 
-          (0, _jquery["default"])(sliderItems[e.target.attributes.sliderIndex.value - 1]).addClass("slider__item--active");
+          (0, _jquery["default"])(sliderItems[e.target.attributes.sliderIndex.value - 1]).addClass("slider__item--active"); // Start to slide from current active slide
+
+          _this.slide(e.target.attributes.sliderIndex.value - 1);
         });
       }
     }, {
       key: "start",
       value: function start() {
         this.bulletGenerate();
-        this.slide();
+        this.slide(this.index);
         this.nav();
       }
     }]);
