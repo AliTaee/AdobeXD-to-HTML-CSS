@@ -1453,7 +1453,7 @@ body {
       height: 100vh;
       width: 100vw;
       transform: translateX(0);
-      padding-top: 100px;
+      margin-top: 100px;
       background: #333333;
       z-index: 100;
       overflow-y: auto; }
@@ -1594,8 +1594,6 @@ body {
     margin-left: 20px; } }
 
 @media only screen and (max-width: 1050px) {
-  .intro {
-    overflow: hidden; }
   .menu__hum {
     margin-right: auto;
     visibility: visible;
@@ -1617,7 +1615,7 @@ body {
     background: #333333;
     height: 100vh;
     width: 100vw;
-    padding-top: 100px;
+    margin-top: 100px;
     margin-right: 0;
     position: absolute;
     right: 0;
