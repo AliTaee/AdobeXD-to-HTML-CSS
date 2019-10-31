@@ -1456,7 +1456,7 @@ body {
       padding-top: 100px;
       background: #333333;
       z-index: 100;
-      overflow: scroll; }
+      overflow-y: auto; }
   .menu__hum {
     cursor: pointer;
     display: block;
@@ -1594,6 +1594,8 @@ body {
     margin-left: 20px; } }
 
 @media only screen and (max-width: 1050px) {
+  .intro {
+    overflow: hidden; }
   .menu__hum {
     margin-right: auto;
     visibility: visible;
@@ -1604,6 +1606,13 @@ body {
     right: 0;
     transform: none;
     margin-top: 64px; }
+    .menu__nav:after {
+      content: "";
+      width: 17px;
+      height: 1px;
+      background: rgba(255, 255, 255, 0.5);
+      display: block;
+      margin: 63px auto 54px; }
   .menu__ham-wrapper {
     background: #333333;
     height: 100vh;
@@ -1617,6 +1626,8 @@ body {
   .menu__list {
     display: flex;
     flex-direction: column; }
+    .menu__list li:last-child {
+      margin-bottom: 0; }
   .menu__link {
     font-size: 24px;
     font-weight: 500; }
@@ -1637,7 +1648,9 @@ body {
     bottom: 0; }
   .menu__contact {
     max-width: 100px;
-    margin: 0 auto; }
+    margin: 0 auto 76px; }
+  .menu__area-number {
+    margin: 4px 7px 0 0; }
   .menu__logo, .menu__hum, .menu__contact {
     z-index: 101; } }
 

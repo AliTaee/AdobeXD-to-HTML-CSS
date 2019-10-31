@@ -7,6 +7,11 @@
 }
 
 @media only screen and (max-width: $md) {
+
+	.intro {
+		overflow: hidden;
+	}
+	
 	.menu {
 		&__hum {
 			margin-right: auto;
@@ -20,6 +25,15 @@
 			right: 0;
 			transform: none;
 			margin-top: 64px;
+
+			&:after {
+				content: "";
+				width: 17px;
+				height: 1px;
+				background: rgba(255, 255, 255, 0.5);
+				display: block;
+				margin: 63px auto 54px;
+			}
 		}
 
 		&__ham-wrapper {
@@ -37,6 +51,9 @@
 		&__list {
 			display: flex;
 			flex-direction: column;
+			& li:last-child {
+				margin-bottom: 0;
+			}
 		}
 
 		&__link {
@@ -69,7 +86,11 @@
 
 		&__contact {
 			max-width: 100px;
-			margin: 0 auto;
+			margin: 0 auto 76px;
+		}
+
+		&__area-number {
+			margin: 4px 7px 0 0;
 		}
 
 		&__logo,
