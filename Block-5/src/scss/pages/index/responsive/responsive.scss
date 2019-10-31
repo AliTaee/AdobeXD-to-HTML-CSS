@@ -19,6 +19,7 @@
 			top: 0;
 			right: 0;
 			transform: none;
+			margin-top: 64px;
 		}
 
 		&__ham-wrapper {
@@ -40,6 +41,35 @@
 
 		&__link {
 			font-size: 24px;
+			font-weight: 500;
+		}
+
+		&__item {
+			margin-left: 0;
+			text-align: center;
+			margin-bottom: 35px;
+		}
+
+		&__sub {
+			&:hover .menu__sub-menu {
+				width: 150px;
+				opacity: 1;
+				visibility: visible;
+				position: relative;
+				background: transparent;
+				top: 5px;
+				margin: 0 auto;
+			}
+
+			.menu__arrow {
+				position: relative;
+				bottom: 0;
+			}
+		}
+
+		&__contact {
+			max-width: 100px;
+			margin: 0 auto;
 		}
 
 		&__logo,
@@ -63,7 +93,7 @@
 		&__wrapper {
 			padding: 0 24px;
 		}
-		
+
 	}
 
 	.slider {

@@ -68,11 +68,6 @@
 		background: #212121;
 		border-radius: 5px;
 		top: 35px;
-
-		&--active {
-			opacity: 1;
-			visibility: visible;
-		}
 	}
 
 	&__sub-link {
@@ -98,7 +93,7 @@
 	&__ham-wrapper {
 		margin-right: auto;
 		transition: transform 0.5s;
-		
+
 		&.active {
 			right: 0;
 			height: 100vh;
@@ -107,6 +102,7 @@
 			padding-top: 100px;
 			background: #333333;
 			z-index: 100;
+			overflow: scroll;
 		}
 	}
 
