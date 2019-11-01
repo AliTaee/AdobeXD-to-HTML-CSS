@@ -36,12 +36,14 @@
 			background: #333333;
 			height: 100vh;
 			width: 100vw;
-			margin-top: 100px;
 			margin-right: 0;
-			position: fixed;
+			position: absolute;
 			right: 0;
 			top: 0;
 			transform: translateX(100%);
+			overflow-y: auto;
+			opacity: 0;
+			visibility: hidden;
 		}
 
 		&__list {
