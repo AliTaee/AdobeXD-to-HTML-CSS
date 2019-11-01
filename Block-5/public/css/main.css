@@ -1452,8 +1452,6 @@ body {
       transform: translateX(0);
       opacity: 1;
       visibility: visible; }
-    .menu__ham-wrapper.active .menu__nav {
-      margin-top: 164px; }
   .menu__hum {
     cursor: pointer;
     display: block;
@@ -1600,7 +1598,7 @@ body {
     top: 0;
     right: 0;
     transform: none;
-    margin-top: 64px; }
+    margin-top: 164px; }
     .menu__nav:after {
       content: "";
       width: 17px;
