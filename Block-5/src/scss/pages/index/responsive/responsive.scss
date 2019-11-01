@@ -101,6 +101,20 @@
 
 
 @media only screen and (max-width: $sm) {
+
+	.menu {
+		&__logo {
+			background: #333;
+			display: block;
+			width: 100%;
+			padding: 28px 0 23px;
+		}
+	
+		&__text-wrapper {
+			float: right;
+		}
+	}
+
 	.slider__nav {
 		right: 42%;
 	}

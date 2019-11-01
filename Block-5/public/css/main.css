@@ -1650,6 +1650,13 @@ body {
     z-index: 101; } }
 
 @media only screen and (max-width: 800px) {
+  .menu__logo {
+    background: #333;
+    display: block;
+    width: 100%;
+    padding: 28px 0 23px; }
+  .menu__text-wrapper {
+    float: right; }
   .slider__nav {
     right: 42%; } }
 
