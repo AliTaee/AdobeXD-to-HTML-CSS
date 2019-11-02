@@ -11574,57 +11574,26 @@ require("./common/");
 
 require("./pages/");
 
-},{"./common/":49,"./helpers/":50,"./modules/":52,"./pages/":56,"svgxuse":47}],52:[function(require,module,exports){
+},{"./common/":49,"./helpers/":50,"./modules/":52,"./pages/":55,"svgxuse":47}],52:[function(require,module,exports){
 "use strict";
 
 },{}],53:[function(require,module,exports){
 "use strict";
 
-require("core-js/modules/es.object.define-property");
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = void 0;
-
 var _jquery = _interopRequireDefault(require("jquery"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-var DOMCACHESTORE = {};
-var DOMCACHE;
-
-var _default = DOMCACHE = {
-  get: function get(selector, force) {
-    if (DOMCACHESTORE[selector] !== undefined && force === undefined) {
-      return DOMCACHESTORE[selector];
-    }
-
-    DOMCACHESTORE[selector] = (0, _jquery["default"])(selector);
-    return DOMCACHESTORE[selector];
-  }
-};
-
-exports["default"] = _default;
-
-},{"core-js/modules/es.object.define-property":44,"jquery":46}],54:[function(require,module,exports){
-"use strict";
-
-var _jquery = _interopRequireDefault(require("jquery"));
-
-var _jQueryCashe = _interopRequireDefault(require("./jQueryCashe"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 (0, _jquery["default"])(document).ready(function () {
-  _jQueryCashe["default"].get('.menu__hum').click(function () {
-    _jQueryCashe["default"].get(this).toggleClass("menu__hum-item--active");
-
-    _jQueryCashe["default"].get('.menu__ham-wrapper').toggleClass("active");
+  var $hum = (0, _jquery["default"])('.menu__hum');
+  var $humWrapper = (0, _jquery["default"])('.menu__ham-wrapper');
+  $hum.click(function () {
+    $hum.toggleClass("menu__hum-item--active");
+    $humWrapper.toggleClass("active");
   });
 });
 
-},{"./jQueryCashe":53,"jquery":46}],55:[function(require,module,exports){
+},{"jquery":46}],54:[function(require,module,exports){
 "use strict";
 
 require("core-js/modules/es.object.define-property");
@@ -11749,13 +11718,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
   window.onload = headerSlider.start();
 });
 
-},{"core-js/modules/es.object.define-property":44,"core-js/modules/web.timers":45,"jquery":46}],56:[function(require,module,exports){
+},{"core-js/modules/es.object.define-property":44,"core-js/modules/web.timers":45,"jquery":46}],55:[function(require,module,exports){
 "use strict";
 
 require("../modules/slider");
 
 require("../modules/menu");
 
-},{"../modules/menu":54,"../modules/slider":55}]},{},[51])
+},{"../modules/menu":53,"../modules/slider":54}]},{},[51])
 
 //# sourceMappingURL=script.js.map
