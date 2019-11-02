@@ -1,5 +1,5 @@
 import $ from 'jquery';
-import DOMCACHE from './jQueryCash';
+import DOMCACHE from './jQueryCashe';
 
 $(document).ready(function () {
 	DOMCACHE.get('.menu__hum').click(function(){

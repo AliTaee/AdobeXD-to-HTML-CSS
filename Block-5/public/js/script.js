@@ -11612,19 +11612,19 @@ exports["default"] = _default;
 
 var _jquery = _interopRequireDefault(require("jquery"));
 
-var _jQueryCash = _interopRequireDefault(require("./jQueryCash"));
+var _jQueryCashe = _interopRequireDefault(require("./jQueryCashe"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 (0, _jquery["default"])(document).ready(function () {
-  _jQueryCash["default"].get('.menu__hum').click(function () {
-    _jQueryCash["default"].get(this).toggleClass("menu__hum-item--active");
+  _jQueryCashe["default"].get('.menu__hum').click(function () {
+    _jQueryCashe["default"].get(this).toggleClass("menu__hum-item--active");
 
-    _jQueryCash["default"].get('.menu__ham-wrapper').toggleClass("active");
+    _jQueryCashe["default"].get('.menu__ham-wrapper').toggleClass("active");
   });
 });
 
-},{"./jQueryCash":53,"jquery":46}],55:[function(require,module,exports){
+},{"./jQueryCashe":53,"jquery":46}],55:[function(require,module,exports){
 "use strict";
 
 require("core-js/modules/es.object.define-property");
