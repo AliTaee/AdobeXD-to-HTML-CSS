@@ -16,17 +16,17 @@ Project is created with:
 
 ## UI
 
-- Block 5:
+- ## Block 5:
 ![block5](img/Block-5.png)
 
-- Block 4:
+- ## Block 4:
 ![block4](img/Desktop.png)
 ![block4](img/Mobile.png)
 
-- Block 3:
+- ## Block 3:
 ![block3](img/Test3.PNG)
 
-- Block 1 & 2:
+- ## Block 1 & 2:
 ![block1](img/header1.png)
 ![block2](img/header2.png)
 
