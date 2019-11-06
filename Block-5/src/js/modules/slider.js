@@ -18,6 +18,7 @@ $(document).ready(function () {
 			let sliderItems = $(this.sliderContainer);
 			let sliderText = $(this.sliderText);
 			let bullet = $(this.bullet);
+			console.log(sliderItems);
 
 			this.timer = setInterval((function sliderFunc() {
 				if (index < sliderItems.length) {

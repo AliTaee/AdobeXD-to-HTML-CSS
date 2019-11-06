@@ -11632,6 +11632,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         var sliderItems = (0, _jquery["default"])(this.sliderContainer);
         var sliderText = (0, _jquery["default"])(this.sliderText);
         var bullet = (0, _jquery["default"])(this.bullet);
+        console.log(sliderItems);
         this.timer = setInterval(function sliderFunc() {
           if (index < sliderItems.length) {
             // Slider
