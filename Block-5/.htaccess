@@ -1,8 +1,0 @@
-RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-
-#Setting Character Set
-	AddDefaultCharset UTF-8
-
-RewriteRule ^home/?$ pages/index.php [L]
