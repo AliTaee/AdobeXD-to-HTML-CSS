@@ -1,0 +1,14 @@
+{
+  "name": "adobexd-to-front-end",
+  "version": "1.0.0",
+  "description": "adobe xd to front-end code",
+  "main": "index.js",
+  "repository": "git@github.com:AliTaee/AdobeXD-to-HTML-CSS.git",
+  "author": "alitaee <ali.taee.72@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "HTML",
+    "CSS",
+    "SCSS"
+  ]
+}
