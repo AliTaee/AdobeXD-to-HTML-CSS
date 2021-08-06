@@ -1,0 +1,48 @@
+.footer {
+  @at-root #{&}__main {
+    padding: 139px 0;
+    position: relative;
+    background: rgb(51, 51, 51);
+    @include img_background("../assets/img/background/background.png");
+    @include color_background(rgba(51, 51, 51, 0.8));
+  }
+
+  @at-root #{&}__content {
+    position: relative;
+    z-index: 1;
+  }
+
+  @at-root #{&}__title {
+    text-align: center;
+    font-size: $font-main-title-s;
+    font-weight: $medium;
+    color: $main_color;
+    margin-bottom: 8px;
+  }
+
+  @at-root #{&}__text {
+    font-size: $font-main-size;
+    color: $main_color;
+    text-align: center;
+  }
+
+  @at-root #{&}__action {
+    max-width: 552px;
+    margin: 60px auto 0;
+    display: flex;
+  }
+
+  @at-root #{&}__copyright {
+    padding: 26px 0 24px;
+    background: $black;
+    color: $grey;
+    font-size: $font-main-size;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue",
+      Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: $thin;
+    direction: ltr;
+  }
+}

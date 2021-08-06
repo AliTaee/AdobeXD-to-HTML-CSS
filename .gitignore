@@ -1,2 +1,4 @@
 _Developer
 node_modules
+.cache
+dist

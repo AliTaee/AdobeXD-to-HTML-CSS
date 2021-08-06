@@ -1,0 +1,30 @@
+@mixin btn {
+  border-radius: 4px;
+  font-size: $btn-main-size;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $main_color;
+  text-decoration: none;
+}
+
+@mixin img_background($src) {
+  background: url($src);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@mixin color_background($color) {
+  &::before {
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background-color: $color;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
