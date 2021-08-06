@@ -26,10 +26,6 @@
   }
 
   @at-root #{&}__back {
-    background-image: url(../assets/img/Image_246.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     height: 276px;
     width: 417px;
     display: block;
@@ -40,15 +36,15 @@
   }
 
   @at-root #{&}__back--design {
-    background-image: url(../assets/img/Image_246.png);
+    @include img_background('../assets/img/Image_246.png');
   }
 
   @at-root #{&}__back--seo {
-    background-image: url(../assets/img/Image_255.png);
+    @include img_background('../assets/img/Image_255.png');
   }
 
   @at-root #{&}__back--fiscal {
-    background-image: url(../assets/img/Image_254.png);
+    @include img_background('../assets/img/Image_254.png');
   }
 
   @at-root #{&}__img {

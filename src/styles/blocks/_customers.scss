@@ -45,9 +45,6 @@
   }
 
   @at-root #{&}__back {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     height: 82px;
     width: 82px;
     display: block;
@@ -58,11 +55,11 @@
   }
 
   @at-root #{&}__back--cus1 {
-    background-image: url(../assets/img/customers/Mask_Group_181.png);
+    @include img_background('../assets/img/customers/Mask_Group_181.png');
   }
 
   @at-root #{&}__back--cus2 {
-    background-image: url(../assets/img/customers/Mask_Group_182.png);
+    @include img_background('../assets/img/customers/Mask_Group_182.png');
   }
 
   @at-root #{&}__avatar {
