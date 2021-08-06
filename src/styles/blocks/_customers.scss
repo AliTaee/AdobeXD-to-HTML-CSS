@@ -1,6 +1,6 @@
 .customers {
   background: $soft_white;
-  background: rgba(242, 242, 242, 0.93);
+  background: $soft_white_rgba;
   padding: 100px 0;
 
   @at-root #{&}__intro {

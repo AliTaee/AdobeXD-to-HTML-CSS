@@ -1,12 +1,14 @@
 // Font color and background
-$btn_primary: #5274f9;
+$button_primary: #5274f9;
 $blue: #5c3ffb;
+$blue_rgba: rgba(34, 57, 155, 0.8);
 $soft_blue: #edf1ff;
 $green: #32ba6e;
 $soft_green: #e9f9f0;
 $orange: #fb7c3f;
 $soft_orange: #fef2eb;
 $black: #333333;
+$black_rgba: rgba(51, 51, 51, 0.8);
 $black_level2: #404040;
 $grey: #979797;
 $grey_level2: #808080;
@@ -15,6 +17,7 @@ $grey_level4: #62758d;
 $grey_soft: #c5c5c5;
 $main_color: #ffffff;
 $soft_white: #f2f2f2;
+$soft_white_rgba: rgba(242, 242, 242, 0.93);
 $background_white: #ffffff;
 
 // box-shadow
@@ -59,7 +62,6 @@ $mobile: 498px;
       format('woff');
 }
 
-// Vazir
 @font-face {
   font-family: 'Vazir';
   font-weight: 300;
