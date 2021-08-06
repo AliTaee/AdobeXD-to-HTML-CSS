@@ -63,7 +63,7 @@
     position: relative;
     border-radius: 4px;
     background: $background_white;
-    box-shadow: 0px 3px 46px rgba(0, 0, 0, 0.1);
+    box-shadow: $box-shadow_lever2;
     max-width: 372px;
     margin: -52px auto 0;
     padding: 43px 40px 42px;
@@ -81,7 +81,7 @@
   @at-root #{&}__desc {
     font-weight: $light;
     font-size: $font-main-size-r;
-    color: #62758d;
+    color: $grey_level4;
     text-align: center;
     margin-bottom: 40px;
   }

@@ -33,13 +33,11 @@
   }
 
   @at-root #{&}__copyright {
+    @include flexCenter;
     padding: 26px 0 24px;
     background: $black;
     color: $grey;
     font-size: $font-main-size;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-family: $english-font;
     font-weight: $thin;
     direction: ltr;

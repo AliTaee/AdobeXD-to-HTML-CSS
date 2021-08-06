@@ -2,9 +2,7 @@
   border-radius: 4px;
   font-size: $btn-main-size;
   height: 64px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flexCenter;
   color: $main_color;
   text-decoration: none;
 }
@@ -26,4 +24,17 @@
     top: 0;
     right: 0;
   }
+}
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flexBox($direction: null, $justifyContent: null, $alignItems: null) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
 }

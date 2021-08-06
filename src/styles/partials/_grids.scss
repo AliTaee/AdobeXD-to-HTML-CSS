@@ -16,9 +16,7 @@
 }
 
 .row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  @include flexBox(row, space-around);
   margin-left: -30px;
   margin-right: -30px;
 
