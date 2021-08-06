@@ -1,101 +1,99 @@
-
 @media only screen and (max-width: $tablet-S) {
-    .intro {
-        @at-root #{&}__logo {
-            margin: 0 auto 48px;
-        }
-
-        @at-root #{&}__title {
-            margin-bottom: 16px;
-        }
-
-        @at-root #{&}__action {
-            margin: 20px auto 0;
-        }
+  .intro {
+    @at-root #{&}__logo {
+      margin: 0 auto 48px;
     }
 
-    .services {
-        @at-root #{&}__row {
-            flex-direction: column;
-            margin: 0 auto;
-        }
-
-        @at-root #{&}__col {
-            max-width: 100%;
-            margin-bottom: 30px;
-        }
-
-        @at-root #{&}__img {
-            margin: 0 auto;
-        }
-
-        @at-root #{&}__back {
-            width: 100%;
-        }
-
-        @at-root #{&}__action {
-            max-width: 80%;
-            padding: 27px 27px 35px;
-            margin: -40px auto 0;
-        }
-
-        @at-root #{&}__title {
-            margin: 0 auto 16px;
-        }
-
-        @at-root #{&}__text {
-            margin: 0 auto 45px;
-            font-weight: $light;
-        }
+    @at-root #{&}__title {
+      margin-bottom: 16px;
     }
 
-    .services__row .services__col:last-child {
-        margin-bottom: 0;
+    @at-root #{&}__action {
+      margin: 20px auto 0;
+    }
+  }
+
+  .services {
+    @at-root #{&}__row {
+      flex-direction: column;
+      margin: 0 auto;
     }
 
-    .video {
-        @at-root #{&}__player {
-            width: 100%;
-        }
-    
-        @at-root #{&}__text {
-            width: 100%;
-        }
-    }
-    
-
-    .customers {
-        @at-root #{&}__text {
-            margin-bottom: 30px;
-            font-weight: $light;
-        }
-
-        @at-root #{&}__info {
-            font-weight: $medium;
-        }
-
-        @at-root #{&}__logo-list {
-            margin: 50px auto 0;
-            height: 80px;
-        }
+    @at-root #{&}__col {
+      max-width: 100%;
+      margin-bottom: 30px;
     }
 
-    .footer__text,
-    .customers__story {
-        font-weight: $light;
+    @at-root #{&}__img {
+      margin: 0 auto;
     }
 
-    .video__list-item {
-        font-size: $font-main-size-s;
+    @at-root #{&}__back {
+      width: 100%;
     }
 
-    .footer {
-        @at-root #{&}__action {
-            margin: 40px 0 0 0;
-        }
-
-        .btn {
-            font-weight: $bold;
-        }
+    @at-root #{&}__action {
+      max-width: 80%;
+      padding: 27px 27px 35px;
+      margin: -40px auto 0;
     }
+
+    @at-root #{&}__title {
+      margin: 0 auto 16px;
+    }
+
+    @at-root #{&}__text {
+      margin: 0 auto 45px;
+      font-weight: $light;
+    }
+  }
+
+  .services__row .services__col:last-child {
+    margin-bottom: 0;
+  }
+
+  .video {
+    @at-root #{&}__player {
+      width: 100%;
+    }
+
+    @at-root #{&}__text {
+      width: 100%;
+    }
+  }
+
+  .customers {
+    @at-root #{&}__text {
+      margin-bottom: 30px;
+      font-weight: $light;
+    }
+
+    @at-root #{&}__info {
+      font-weight: $medium;
+    }
+
+    @at-root #{&}__logo-list {
+      margin: 50px auto 0;
+      height: 80px;
+    }
+  }
+
+  .footer__text,
+  .customers__story {
+    font-weight: $light;
+  }
+
+  .video__list-item {
+    font-size: $font-main-size-s;
+  }
+
+  .footer {
+    @at-root #{&}__action {
+      margin: 40px 0 0 0;
+    }
+
+    .btn {
+      font-weight: $bold;
+    }
+  }
 }

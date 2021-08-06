@@ -1,7 +1,7 @@
 .intro {
   position: relative;
   background: rgba(34, 57, 155, 0.8);
-  @include img_background("../assets/img/background/background.png");
+  @include img_background('../assets/img/background/background.png');
   @include color_background(rgba(34, 57, 155, 0.8));
   padding: 150px 15px 111px 15px;
 

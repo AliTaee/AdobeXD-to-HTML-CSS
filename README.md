@@ -1,19 +1,26 @@
 # About
 
-> Adobe Xd to Front-end code. 
+> Adobe Xd to Front-end code.
 
 ## Technologies
 
 Project is created with:
 
 - HTML5
-- SVG sprite
-- CSS - SCSS - BEM
+- CSS
+- [BEM](https://css-tricks.com/bem-101/)
+- [SCSS](https://sass-lang.com/)
 - CSS Flexbox
-- CSS best practices
+
+## Tools Used
+
+There are no CSS or JS libraries used for this project. However these tools have been used:
+
+- [Parcel.js](https://parceljs.org/) as the application bundler
+- Eslint as the linter
+- Prettier as the code formatter
+- Sass as the css preprocessor
 
 ## UI
 
 ![screen](design/desktop.png)
-
-For detailed explanation on how things work, checkout the [SCSS](https://sass-lang.com/), [BEM](https://css-tricks.com/bem-101/), [SVG Sprites](https://css-tricks.com/svg-sprites-use-better-icon-fonts/).

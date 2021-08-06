@@ -19,9 +19,13 @@
     "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
     "gh-pages": "^3.2.3",
     "parcel-bundler": "^1.12.5",
     "parcel-plugin-asset-copier": "^1.1.0",
+    "prettier": "^2.3.2",
     "sass": "^1.37.5"
   },
   "assetsPath": "src/assets"

@@ -1,81 +1,80 @@
 @media only screen and (max-width: $mobile) {
+  .section-wrape {
+    padding: 0 15px;
+  }
 
-    .section-wrape {
-        padding: 0 15px;
+  .services {
+    @at-root #{&}__title {
+      color: #404040;
     }
 
-    .services {
-        @at-root #{&}__title {
-            color: #404040;
-        }
+    @at-root #{&}__action {
+      box-shadow: 0px 3px 36px rgba(0, 0, 0, 0.101);
+    }
+  }
 
-        @at-root #{&}__action {
-            box-shadow: 0px 3px 36px rgba(0, 0, 0, 0.101);
-        }
+  .video__list-item:before {
+    right: -16px;
+  }
+
+  .customers {
+    @at-root #{&}__title {
+      color: #404040;
+      margin-bottom: 10px;
     }
 
-    .video__list-item:before {
-        right: -16px;
+    @at-root #{&}__player {
+      max-width: 100%;
+      margin: 30px 0 50px;
     }
 
-    .customers {
-        @at-root #{&}__title {
-            color: #404040;
-            margin-bottom: 10px;
-        }
-
-        @at-root #{&}__player {
-            max-width: 100%;
-            margin: 30px 0 50px;
-        }
-
-        @at-root #{&}__row {
-            flex-direction: column-reverse;
-        }
-
-        @at-root #{&}__col {
-            max-width: 100%;
-            box-shadow: 0px 13px 23px rgba(0, 0, 0, 0.051);
-        }
-
-        @at-root #{&}__col:nth-child(2) {
-            margin-bottom: 30px;
-        }
-
-        @at-root #{&}__about {
-            flex-direction: column;
-        }
-
-        @at-root #{&}__info {
-            color: #808080;
-        }
-
-        @at-root #{&}__story {
-            color: #808080;
-            min-height: initial;
-        }
-
-        @at-root #{&}__logo {
-            height: 50px;
-        }
+    @at-root #{&}__row {
+      flex-direction: column-reverse;
     }
 
-    .intro .btn,
-    .footer .btn {
-        height: 48px;
+    @at-root #{&}__col {
+      max-width: 100%;
+      box-shadow: 0px 13px 23px rgba(0, 0, 0, 0.051);
     }
 
-    .intro .btn--margin,
-    .footer .btn--secondary {
-        margin-right: 10px;
+    @at-root #{&}__col:nth-child(2) {
+      margin-bottom: 30px;
     }
 
-    .intro .btn--secondary,
-    .footer .btn--secondary {
-        font-weight: $medium;
+    @at-root #{&}__about {
+      flex-direction: column;
     }
 
-    .footer__copyright {
-        color: #C5C5C5;
+    @at-root #{&}__info {
+      color: #808080;
     }
+
+    @at-root #{&}__story {
+      color: #808080;
+      min-height: initial;
+    }
+
+    @at-root #{&}__logo {
+      height: 50px;
+    }
+  }
+
+  .intro .btn,
+  .footer .btn {
+    height: 48px;
+  }
+
+  .intro .btn--margin,
+  .footer .btn--secondary {
+    margin-right: 10px;
+  }
+
+  .intro .btn--secondary,
+  .footer .btn--secondary {
+    font-weight: $medium;
+  }
+
+  .footer__copyright {
+    color: #c5c5c5;
+  }
 }

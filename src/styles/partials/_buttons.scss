@@ -1,62 +1,62 @@
 .btn {
-    @include btn;
-    width: 226px;
-    font-weight: $bold;
+  @include btn;
+  width: 226px;
+  font-weight: $bold;
 
-    @at-root #{&}--primary {
-        background: $btn_primary;
-    }
+  @at-root #{&}--primary {
+    background: $btn_primary;
+  }
 
-    @at-root #{&}--secondary {
-        border: 1px solid $main_color;
-        margin-right: 20px;
-    }
+  @at-root #{&}--secondary {
+    border: 1px solid $main_color;
+    margin-right: 20px;
+  }
 
-    @at-root #{&}--margin {
-        margin-right: 22px;
-    }
+  @at-root #{&}--margin {
+    margin-right: 22px;
+  }
 
-    @at-root #{&}--tag {
-        border-radius: 4px;
-        width: 123px;
-        height: 32px;
-        font-weight: $medium;
-        font-size: $font-main-size-r;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-decoration: none;
-    }
+  @at-root #{&}--tag {
+    border-radius: 4px;
+    width: 123px;
+    height: 32px;
+    font-weight: $medium;
+    font-size: $font-main-size-r;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+  }
 
-    @at-root #{&}--tag:nth-child(even) {
-        margin-right: 10px;
-    }
+  @at-root #{&}--tag:nth-child(even) {
+    margin-right: 10px;
+  }
 
-    @at-root #{&}--tag:nth-child(2n + 3) {
-        margin-top: 10px;
-    }
+  @at-root #{&}--tag:nth-child(2n + 3) {
+    margin-top: 10px;
+  }
 
-    @at-root #{&}--tag:nth-child(2n + 4) {
-        margin-top: 10px;
-    }
+  @at-root #{&}--tag:nth-child(2n + 4) {
+    margin-top: 10px;
+  }
 
-    @at-root #{&}--large {
-        width: 266px;
-        font-weight: $medium;
-    }
+  @at-root #{&}--large {
+    width: 266px;
+    font-weight: $medium;
+  }
 
-    @at-root #{&}--orange {
-        background: #FEF2EB;
-        color: #FB7C3F;
-    }
+  @at-root #{&}--orange {
+    background: #fef2eb;
+    color: #fb7c3f;
+  }
 
-    @at-root #{&}--blue {
-        background: #EDF1FF;
-        color: #5C3FFB;
-    }
+  @at-root #{&}--blue {
+    background: #edf1ff;
+    color: #5c3ffb;
+  }
 
-    @at-root #{&}--green {
-        background: #E9F9F0;
-        color: #32BA6E;
-    }
+  @at-root #{&}--green {
+    background: #e9f9f0;
+    color: #32ba6e;
+  }
 }

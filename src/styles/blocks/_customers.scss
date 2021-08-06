@@ -1,114 +1,114 @@
 .customers {
-    background: #F2F2F2;
-    background: rgba(242, 242, 242, 0.93);
-    padding: 100px 0;
+  background: #f2f2f2;
+  background: rgba(242, 242, 242, 0.93);
+  padding: 100px 0;
 
-    @at-root #{&}__intro {
-        max-width: 700px;
-        margin: 0 auto;
-    }
+  @at-root #{&}__intro {
+    max-width: 700px;
+    margin: 0 auto;
+  }
 
-    @at-root #{&}__title {
-        font-size: $font-main-title-s;
-        font-weight: $medium;
-        color: $black;
-        text-align: center;
-        margin-bottom: 8px;
-    }
+  @at-root #{&}__title {
+    font-size: $font-main-title-s;
+    font-weight: $medium;
+    color: $black;
+    text-align: center;
+    margin-bottom: 8px;
+  }
 
-    @at-root #{&}__text {
-        font-size: $font-main-size;
-        text-align: center;
-        color: $black_soft;
-        margin-bottom: 70px;
-    }
+  @at-root #{&}__text {
+    font-size: $font-main-size;
+    text-align: center;
+    color: $black_soft;
+    margin-bottom: 70px;
+  }
 
-    @at-root #{&}__row {
-        display: flex;
-        justify-content: space-around;
-        max-width: 1064px;
-        margin: 0 auto;
-    }
+  @at-root #{&}__row {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1064px;
+    margin: 0 auto;
+  }
 
-    @at-root #{&}__col {
-        max-width: 512px;
-        background: $main_color;
-        box-shadow: 0px 3px 33px rgba(0, 0, 0, 0.071);
-        padding: 68px 46px 68px 54px;
-        border-radius: 10px;
-        display: flex;
-    }
+  @at-root #{&}__col {
+    max-width: 512px;
+    background: $main_color;
+    box-shadow: 0px 3px 33px rgba(0, 0, 0, 0.071);
+    padding: 68px 46px 68px 54px;
+    border-radius: 10px;
+    display: flex;
+  }
 
-    @at-root #{&}__pic {
-        position: relative;
-        margin-left: 40px;
-        width: 82px;
-    }
+  @at-root #{&}__pic {
+    position: relative;
+    margin-left: 40px;
+    width: 82px;
+  }
 
-    @at-root #{&}__back {
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        height: 82px;
-        width: 82px;
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 0;
-        z-index: 2;
-    }
+  @at-root #{&}__back {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 82px;
+    width: 82px;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+  }
 
-    @at-root #{&}__back--cus1 {
-        background-image: url(../assets/img/customers/Mask_Group_181.png);
-    }
+  @at-root #{&}__back--cus1 {
+    background-image: url(../assets/img/customers/Mask_Group_181.png);
+  }
 
-    @at-root #{&}__back--cus2 {
-        background-image: url(../assets/img/customers/Mask_Group_182.png);
-    }
+  @at-root #{&}__back--cus2 {
+    background-image: url(../assets/img/customers/Mask_Group_182.png);
+  }
 
-    @at-root #{&}__avatar {
-        width: 82px;
-        height: 82px;
-        border-radius: 50%;
-        z-index: 1;
-        position: relative;
-    }
+  @at-root #{&}__avatar {
+    width: 82px;
+    height: 82px;
+    border-radius: 50%;
+    z-index: 1;
+    position: relative;
+  }
 
-    @at-root #{&}__card {
-        margin: 0 auto;
-        max-width: 290px;
-    }
+  @at-root #{&}__card {
+    margin: 0 auto;
+    max-width: 290px;
+  }
 
-    @at-root #{&}__story {
-        font-size: 20px;
-        font-weight: $thin;
-        color: #404040;
-        margin-bottom: 40px;
-        min-height: 148px;
-    }
+  @at-root #{&}__story {
+    font-size: 20px;
+    font-weight: $thin;
+    color: #404040;
+    margin-bottom: 40px;
+    min-height: 148px;
+  }
 
-    @at-root #{&}__name {
-        font-size: 20px;
-        font-weight: $medium;
-        color: #404040;
-        margin-bottom: 8px;
-    }
+  @at-root #{&}__name {
+    font-size: 20px;
+    font-weight: $medium;
+    color: #404040;
+    margin-bottom: 8px;
+  }
 
-    @at-root #{&}__info {
-        font-size: 15px;
-        font-weight: $light;
-        color: #404040;
-    }
+  @at-root #{&}__info {
+    font-size: 15px;
+    font-weight: $light;
+    color: #404040;
+  }
 
-    @at-root #{&}__logo-list {
-        margin: 95px auto 0;
-        max-width: 600px;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-    }
+  @at-root #{&}__logo-list {
+    margin: 95px auto 0;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
 
-    @at-root #{&}__logo {
-        height: 80px;
-    }
+  @at-root #{&}__logo {
+    height: 80px;
+  }
 }

@@ -1,53 +1,53 @@
 .video {
-    background: #606060;
-    padding: 88px 0;
+  background: #606060;
+  padding: 88px 0;
 
-    @at-root #{&}__row {
-        display: flex;
-        justify-content: space-between;
-        max-width: 1159px;
-        margin: 0 auto;
-    }
+  @at-root #{&}__row {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1159px;
+    margin: 0 auto;
+  }
 
-    @at-root #{&}__player {
-        width: 474px;
-    }
+  @at-root #{&}__player {
+    width: 474px;
+  }
 
-    @at-root #{&}__text {
-        width: 579px;
-    }
+  @at-root #{&}__text {
+    width: 579px;
+  }
 
-    @at-root #{&}__title {
-        font-size: $font-main-title-s;
-        font-weight: $medium;
-        color: $main_color;
-        text-align: right;
-        margin-bottom: 50px;
-    }
+  @at-root #{&}__title {
+    font-size: $font-main-title-s;
+    font-weight: $medium;
+    color: $main_color;
+    text-align: right;
+    margin-bottom: 50px;
+  }
 
-    @at-root #{&}__list-item {
-        position: relative;
-        max-width: 546px;
-        font-size: $font-main-size;
-        font-weight: $light;
-        color: $main_color;
-        text-align: right;
-        margin-bottom: 20px;
-        float: left;
-    }
+  @at-root #{&}__list-item {
+    position: relative;
+    max-width: 546px;
+    font-size: $font-main-size;
+    font-weight: $light;
+    color: $main_color;
+    text-align: right;
+    margin-bottom: 20px;
+    float: left;
+  }
 
-    @at-root #{&}__list-item:before {
-        position: absolute;
-        content: "";
-        top: 10px;
-        right: -26px;
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        background: #ffffff;
-    }
+  @at-root #{&}__list-item:before {
+    position: absolute;
+    content: '';
+    top: 10px;
+    right: -26px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ffffff;
+  }
 
-    @at-root #{&}__list-item:last-child {
-        margin-bottom: 0;
-    }
+  @at-root #{&}__list-item:last-child {
+    margin-bottom: 0;
+  }
 }
