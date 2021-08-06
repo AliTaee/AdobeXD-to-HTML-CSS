@@ -1,5 +1,5 @@
 .customers {
-  background: #f2f2f2;
+  background: $soft_white;
   background: rgba(242, 242, 242, 0.93);
   padding: 100px 0;
 
@@ -19,7 +19,7 @@
   @at-root #{&}__text {
     font-size: $font-main-size;
     text-align: center;
-    color: $black_soft;
+    color: $grey_level3;
     margin-bottom: 70px;
   }
 
@@ -82,7 +82,7 @@
   @at-root #{&}__story {
     font-size: 20px;
     font-weight: $thin;
-    color: #404040;
+    color: $black_level2;
     margin-bottom: 40px;
     min-height: 148px;
   }
@@ -90,14 +90,14 @@
   @at-root #{&}__name {
     font-size: 20px;
     font-weight: $medium;
-    color: #404040;
+    color: $black_level2;
     margin-bottom: 8px;
   }
 
   @at-root #{&}__info {
     font-size: 15px;
     font-weight: $light;
-    color: #404040;
+    color: $black_level2;
   }
 
   @at-root #{&}__logo-list {

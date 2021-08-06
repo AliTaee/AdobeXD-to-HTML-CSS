@@ -5,7 +5,7 @@
 
   .services {
     @at-root #{&}__title {
-      color: #404040;
+      color: $black_level2;
     }
 
     @at-root #{&}__action {
@@ -19,7 +19,7 @@
 
   .customers {
     @at-root #{&}__title {
-      color: #404040;
+      color: $black_level2;
       margin-bottom: 10px;
     }
 
@@ -46,11 +46,11 @@
     }
 
     @at-root #{&}__info {
-      color: #808080;
+      color: $grey_level2;
     }
 
     @at-root #{&}__story {
-      color: #808080;
+      color: $grey_level2;
       min-height: initial;
     }
 
@@ -75,6 +75,6 @@
   }
 
   .footer__copyright {
-    color: #c5c5c5;
+    color: $grey_soft;
   }
 }

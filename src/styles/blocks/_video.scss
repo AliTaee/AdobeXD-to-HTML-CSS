@@ -1,5 +1,5 @@
 .video {
-  background: #606060;
+  background: $grey_level3;
   padding: 88px 0;
 
   @at-root #{&}__row {
@@ -44,7 +44,7 @@
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background: #ffffff;
+    background: $main_color;
   }
 
   @at-root #{&}__list-item:last-child {

@@ -46,17 +46,17 @@
   }
 
   @at-root #{&}--orange {
-    background: #fef2eb;
-    color: #fb7c3f;
+    background: $soft_orange;
+    color: $orange;
   }
 
   @at-root #{&}--blue {
-    background: #edf1ff;
-    color: #5c3ffb;
+    background: $soft_blue;
+    color: $blue;
   }
 
   @at-root #{&}--green {
-    background: #e9f9f0;
-    color: #32ba6e;
+    background: $soft_green;
+    color: $green;
   }
 }
